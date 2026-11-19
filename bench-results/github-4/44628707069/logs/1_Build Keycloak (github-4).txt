@@ -1,0 +1,442 @@
+﻿2026-11-19T22:27:02.0277333Z Current runner version: '2.338.2'
+2026-11-19T22:27:02.0299923Z ##[group]Runner Image Provisioner
+2026-11-19T22:27:02.0300667Z Hosted Compute Agent
+2026-11-19T22:27:02.0301219Z Version: 20261103.629
+2026-11-19T22:27:02.0301741Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T22:27:02.0302327Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T22:27:02.0302928Z Worker ID: {98b32725-359c-4f3a-9939-42c8d2e2f62b}
+2026-11-19T22:27:02.0303524Z Region: westus3
+2026-11-19T22:27:02.0304016Z Cloud: Azure
+2026-11-19T22:27:02.0304470Z ##[endgroup]
+2026-11-19T22:27:02.0305626Z ##[group]Operating System
+2026-11-19T22:27:02.0306232Z Ubuntu
+2026-11-19T22:27:02.0306693Z 26.04.1
+2026-11-19T22:27:02.0307136Z LTS
+2026-11-19T22:27:02.0307579Z ##[endgroup]
+2026-11-19T22:27:02.0308372Z ##[group]Runner Image
+2026-11-19T22:27:02.0308926Z Image: ubuntu-26.04
+2026-11-19T22:27:02.0309421Z Version: 20261111.196.1
+2026-11-19T22:27:02.0310542Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-19T22:27:02.0311781Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+2026-11-19T22:27:02.0312622Z ##[endgroup]
+2026-11-19T22:27:02.0313790Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T22:27:02.0315483Z Actions: read
+2026-11-19T22:27:02.0315960Z Checks: write
+2026-11-19T22:27:02.0316510Z Contents: read
+2026-11-19T22:27:02.0317010Z Metadata: read
+2026-11-19T22:27:02.0317459Z PullRequests: write
+2026-11-19T22:27:02.0318148Z ##[endgroup]
+2026-11-19T22:27:02.0319996Z Secret source: Actions
+2026-11-19T22:27:02.0321230Z Cache mode: write
+2026-11-19T22:27:02.0321820Z Prepare workflow directory
+2026-11-19T22:27:02.0652441Z Prepare all required actions
+2026-11-19T22:27:02.0692640Z Getting action download info
+2026-11-19T22:27:02.3914386Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T22:27:02.8036402Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-11-19T22:27:03.1408218Z Complete job name: Build Keycloak (github-4)
+2026-11-19T22:27:03.2154844Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-19T22:27:03.2155823Z with:
+2026-11-19T22:27:03.2156246Z   repository: boba-benchmarks/keycloak
+2026-11-19T22:27:03.2160609Z   token: ***
+2026-11-19T22:27:03.2161019Z   ssh-strict: true
+2026-11-19T22:27:03.2161435Z   ssh-user: git
+2026-11-19T22:27:03.2161851Z   persist-credentials: true
+2026-11-19T22:27:03.2162310Z   clean: true
+2026-11-19T22:27:03.2162723Z   sparse-checkout-cone-mode: true
+2026-11-19T22:27:03.2163223Z   fetch-depth: 1
+2026-11-19T22:27:03.2163624Z   fetch-tags: false
+2026-11-19T22:27:03.2164046Z   show-progress: true
+2026-11-19T22:27:03.2164476Z   lfs: false
+2026-11-19T22:27:03.2164871Z   submodules: false
+2026-11-19T22:27:03.2165290Z   set-safe-directory: true
+2026-11-19T22:27:03.2165762Z   allow-unsafe-pr-checkout: false
+2026-11-19T22:27:03.2166486Z ##[endgroup]
+2026-11-19T22:27:03.4776770Z Syncing repository: boba-benchmarks/keycloak
+2026-11-19T22:27:03.4779829Z ##[group]Getting Git version info
+2026-11-19T22:27:03.4780993Z Working directory is '/home/runner/work/keycloak/keycloak'
+2026-11-19T22:27:03.4782454Z [command]/usr/bin/git version
+2026-11-19T22:27:03.4791613Z git version 2.56.1
+2026-11-19T22:27:03.4810863Z ##[endgroup]
+2026-11-19T22:27:03.4820734Z Temporarily overriding HOME='/home/runner/work/_temp/d783d367-5815-43b9-8c55-48dc1c81d54a' before making global git config changes
+2026-11-19T22:27:03.4823296Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T22:27:03.4825387Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+2026-11-19T22:27:03.4876915Z Deleting the contents of '/home/runner/work/keycloak/keycloak'
+2026-11-19T22:27:03.4881060Z ##[group]Determining repository object format
+2026-11-19T22:27:03.4882945Z ##[endgroup]
+2026-11-19T22:27:03.4884525Z ##[group]Initializing the repository
+2026-11-19T22:27:03.4886466Z [command]/usr/bin/git init /home/runner/work/keycloak/keycloak
+2026-11-19T22:27:03.4998394Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T22:27:03.5000016Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T22:27:03.5001302Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T22:27:03.5002728Z hint: call:
+2026-11-19T22:27:03.5003538Z hint:
+2026-11-19T22:27:03.5004566Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T22:27:03.5005718Z hint:
+2026-11-19T22:27:03.5006490Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T22:27:03.5008215Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T22:27:03.5009535Z hint:
+2026-11-19T22:27:03.5010149Z hint: 	git branch -m <name>
+2026-11-19T22:27:03.5010785Z hint:
+2026-11-19T22:27:03.5011676Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T22:27:03.5013207Z Initialized empty Git repository in /home/runner/work/keycloak/keycloak/.git/
+2026-11-19T22:27:03.5016501Z [command]/usr/bin/git remote add origin https://github.com/boba-benchmarks/keycloak
+2026-11-19T22:27:03.5071564Z ##[endgroup]
+2026-11-19T22:27:03.5072340Z ##[group]Disabling automatic garbage collection
+2026-11-19T22:27:03.5074518Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T22:27:03.5107774Z ##[endgroup]
+2026-11-19T22:27:03.5109257Z ##[group]Setting up auth
+2026-11-19T22:27:03.5110043Z Removing SSH command configuration
+2026-11-19T22:27:03.5111661Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T22:27:03.5146664Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T22:27:03.5523455Z Removing HTTP extra header
+2026-11-19T22:27:03.5528657Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T22:27:03.5557053Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T22:27:03.5792877Z Removing includeIf entries pointing to credentials config files
+2026-11-19T22:27:03.5793964Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T22:27:03.5830102Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T22:27:03.6072269Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-b9287f9d-b285-4765-96b2-0b67ce132998.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T22:27:03.6109683Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/keycloak/keycloak/.git.path /home/runner/work/_temp/git-credentials-b9287f9d-b285-4765-96b2-0b67ce132998.config
+2026-11-19T22:27:03.6136854Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/keycloak/keycloak/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-b9287f9d-b285-4765-96b2-0b67ce132998.config
+2026-11-19T22:27:03.6169804Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-b9287f9d-b285-4765-96b2-0b67ce132998.config
+2026-11-19T22:27:03.6199426Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-b9287f9d-b285-4765-96b2-0b67ce132998.config
+2026-11-19T22:27:03.6226877Z ##[endgroup]
+2026-11-19T22:27:03.6228142Z ##[group]Fetching the repository
+2026-11-19T22:27:03.6232248Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a:refs/remotes/origin/main
+2026-11-19T22:27:05.5591283Z From https://github.com/boba-benchmarks/keycloak
+2026-11-19T22:27:05.5592838Z  * [new ref]           bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a -> origin/main
+2026-11-19T22:27:05.5599461Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-19T22:27:05.5625234Z   origin/main
+2026-11-19T22:27:05.5632380Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-19T22:27:05.5654285Z bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a
+2026-11-19T22:27:05.5658244Z ##[endgroup]
+2026-11-19T22:27:05.5658929Z ##[group]Determining the checkout info
+2026-11-19T22:27:05.5659600Z ##[endgroup]
+2026-11-19T22:27:05.5662489Z [command]/usr/bin/git sparse-checkout disable
+2026-11-19T22:27:05.5707423Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T22:27:05.5735456Z ##[group]Checking out the ref
+2026-11-19T22:27:05.5739147Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T22:27:06.4430784Z Switched to a new branch 'main'
+2026-11-19T22:27:06.4433980Z branch 'main' set up to track 'origin/main'.
+2026-11-19T22:27:06.4469620Z ##[endgroup]
+2026-11-19T22:27:06.4517974Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T22:27:06.4544102Z bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a
+2026-11-19T22:27:06.4857179Z Prepare all required actions
+2026-11-19T22:27:06.4857684Z Getting action download info
+2026-11-19T22:27:06.6334201Z ##[group]Run ./.github/actions/build-keycloak
+2026-11-19T22:27:06.6334577Z with:
+2026-11-19T22:27:06.6334826Z   upload-m2-repo: true
+2026-11-19T22:27:06.6335144Z   upload-dist: false
+2026-11-19T22:27:06.6335424Z ##[endgroup]
+2026-11-19T22:27:06.6389482Z ##[start-action display=Setup Java;id=__self.setup-java]
+2026-11-19T22:27:06.6429866Z Prepare all required actions
+2026-11-19T22:27:06.6430280Z Getting action download info
+2026-11-19T22:27:06.7612787Z Download action repository 'actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6' (SHA:de7274f081f381c8f8158605e0321c36c376e2e6)
+2026-11-19T22:27:07.6880558Z ##[group]Run ./.github/actions/java-setup
+2026-11-19T22:27:07.6880898Z with:
+2026-11-19T22:27:07.6881125Z   distribution: temurin
+2026-11-19T22:27:07.6881379Z   java-version: 25
+2026-11-19T22:27:07.6881611Z ##[endgroup]
+2026-11-19T22:27:07.6885236Z ##[start-action display=Setup Java;id=__self.setup-java.setup-java]
+2026-11-19T22:27:07.7003289Z ##[group]Run actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6
+2026-11-19T22:27:07.7003599Z with:
+2026-11-19T22:27:07.7003767Z   distribution: temurin
+2026-11-19T22:27:07.7003960Z   java-version: 25
+2026-11-19T22:27:07.7004130Z   java-package: jdk
+2026-11-19T22:27:07.7004301Z   check-latest: false
+2026-11-19T22:27:07.7004478Z   force-download: false
+2026-11-19T22:27:07.7004647Z   set-default: true
+2026-11-19T22:27:07.7004810Z   server-id: github
+2026-11-19T22:27:07.7004996Z   mvn-repositories-include-central: true
+2026-11-19T22:27:07.7005249Z   mvn-repositories-prioritize-central: true
+2026-11-19T22:27:07.7005509Z   overwrite-settings: true
+2026-11-19T22:27:07.7005701Z   cache-read-only: false
+2026-11-19T22:27:07.7005879Z   job-status: success
+2026-11-19T22:27:07.7008212Z   token: ***
+2026-11-19T22:27:07.7008394Z   show-download-progress: false
+2026-11-19T22:27:07.7008605Z   problem-matcher: true
+2026-11-19T22:27:07.7008795Z ##[endgroup]
+2026-11-19T22:27:07.7628790Z ##[group]Installed distributions
+2026-11-19T22:27:07.8058404Z Resolved Java 25.0.5+8 from tool-cache
+2026-11-19T22:27:07.8058795Z Setting Java 25.0.5+8 as the default
+2026-11-19T22:27:07.8065414Z 
+2026-11-19T22:27:07.8065614Z Java configuration:
+2026-11-19T22:27:07.8065915Z   Distribution: temurin
+2026-11-19T22:27:07.8066193Z   Version: 25.0.5+8
+2026-11-19T22:27:07.8066576Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:07.8066944Z 
+2026-11-19T22:27:07.8067324Z ##[endgroup]
+2026-11-19T22:27:07.8097107Z Creating settings.xml with server-id: github
+2026-11-19T22:27:07.8097591Z Creating toolchains.xml for JDK version 25 from temurin
+2026-11-19T22:27:07.8098373Z Writing to /home/runner/.m2/settings.xml
+2026-11-19T22:27:07.8105761Z Writing to /home/runner/.m2/toolchains.xml
+2026-11-19T22:27:07.8112396Z Configured MAVEN_ARGS to include -ntp to suppress Maven transfer progress logs. Set 'show-download-progress: true' to keep the download progress output.
+2026-11-19T22:27:07.8219823Z ##[end-action id=__self.setup-java.setup-java;outcome=success;conclusion=success;duration_ms=133]
+2026-11-19T22:27:07.8224801Z ##[start-action display=Configure Maven for CI;id=__self.setup-java.__run]
+2026-11-19T22:27:07.8505856Z ##[group]Run # -B: batch mode, -nsu: don't check for snapshot updates
+2026-11-19T22:27:07.8506392Z [36;1m# -B: batch mode, -nsu: don't check for snapshot updates[0m
+2026-11-19T22:27:07.8506692Z [36;1margs="-B -nsu"[0m
+2026-11-19T22:27:07.8507082Z [36;1m# HTTP transport settings for Maven Resolver 1.9.x (Maven 3.9.x); Maven 4 uses aether.transport.http.* instead.[0m
+2026-11-19T22:27:07.8508102Z [36;1m# Drop pooled connections after 25 seconds (default: 300), as GitHub runners kept reusing connections that were already closed (https://github.com/keycloak/keycloak/pull/22946).[0m
+2026-11-19T22:27:07.8508756Z [36;1margs="$args -Daether.connector.http.connectionMaxTtl=25"[0m
+2026-11-19T22:27:07.8509540Z [36;1m# Retry failed downloads up to 5 times (default: 3), as Maven Central occasionally fails a single artifact with a transient error.[0m
+2026-11-19T22:27:07.8510040Z [36;1margs="$args -Daether.connector.http.retryHandler.count=5"[0m
+2026-11-19T22:27:07.8510476Z [36;1m# By default only 429 and 503 are retried with a back-off; add 502 (Bad Gateway) and 504 (Gateway Timeout).[0m
+2026-11-19T22:27:07.8511074Z [36;1m# See https://github.com/apache/maven-resolver/issues/2151 for a request to make this configurable and to cover more status codes.[0m
+2026-11-19T22:27:07.8511653Z [36;1margs="$args -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504"[0m
+2026-11-19T22:27:07.8512035Z [36;1mecho "MAVEN_ARGS=$args" >> "$GITHUB_ENV"[0m
+2026-11-19T22:27:07.8563756Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T22:27:07.8564057Z env:
+2026-11-19T22:27:07.8564388Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:07.8564797Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:07.8565116Z   MAVEN_ARGS: -ntp
+2026-11-19T22:27:07.8565292Z ##[endgroup]
+2026-11-19T22:27:07.9051444Z ##[end-action id=__self.setup-java.__run;outcome=success;conclusion=success;duration_ms=82]
+2026-11-19T22:27:07.9060833Z ##[end-action id=__self.setup-java;outcome=success;conclusion=success;duration_ms=1267]
+2026-11-19T22:27:07.9062811Z ##[start-action display=Maven cache;id=__self.maven-cache]
+2026-11-19T22:27:07.9108357Z Prepare all required actions
+2026-11-19T22:27:07.9108748Z Getting action download info
+2026-11-19T22:27:08.0324370Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T22:27:08.6513309Z ##[group]Run ./.github/actions/maven-cache
+2026-11-19T22:27:08.6513650Z with:
+2026-11-19T22:27:08.6513913Z   create-cache-if-it-doesnt-exist: true
+2026-11-19T22:27:08.6514233Z env:
+2026-11-19T22:27:08.6514599Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:08.6515160Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:08.6516268Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:08.6517246Z ##[endgroup]
+2026-11-19T22:27:08.6524623Z ##[start-action display=Key for weekly rotation of cache;id=__self.maven-cache.weekly-cache-key]
+2026-11-19T22:27:08.7171723Z ##[group]Run echo "key=mvn-`date -u "+%Y-%U"`" >> $GITHUB_OUTPUT
+2026-11-19T22:27:08.7172132Z [36;1mecho "key=mvn-`date -u "+%Y-%U"`" >> $GITHUB_OUTPUT[0m
+2026-11-19T22:27:08.7216728Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T22:27:08.7217016Z env:
+2026-11-19T22:27:08.7217262Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:08.7217647Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:08.7218431Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:08.7219038Z ##[endgroup]
+2026-11-19T22:27:08.7340328Z ##[end-action id=__self.maven-cache.weekly-cache-key;outcome=success;conclusion=success;duration_ms=81]
+2026-11-19T22:27:08.7342343Z ##[start-action display=Maven cache;id=__self.maven-cache.cache-maven-repository]
+2026-11-19T22:27:08.7724768Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T22:27:08.7725056Z with:
+2026-11-19T22:27:08.7725315Z   path: ~/.m2/repository/*/*
+~/.m2/wrapper/dists
+!~/.m2/repository/org/keycloak
+
+2026-11-19T22:27:08.7725657Z   key: mvn-and-wrapper-Linux-mvn-2026-46
+2026-11-19T22:27:08.7725891Z   enableCrossOsArchive: false
+2026-11-19T22:27:08.7726095Z   fail-on-cache-miss: false
+2026-11-19T22:27:08.7726283Z   lookup-only: false
+2026-11-19T22:27:08.7726619Z   save-always: false
+2026-11-19T22:27:08.7726782Z env:
+2026-11-19T22:27:08.7727022Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:08.7727388Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:08.7728320Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:08.7728911Z ##[endgroup]
+2026-11-19T22:27:09.0639912Z Cache not found for input keys: mvn-and-wrapper-Linux-mvn-2026-46
+2026-11-19T22:27:09.0705803Z ##[end-action id=__self.maven-cache.cache-maven-repository;outcome=success;conclusion=success;duration_ms=336]
+2026-11-19T22:27:09.0708577Z ##[start-action display=Maven cache;id=__self.maven-cache.restore-maven-repository]
+2026-11-19T22:27:09.0716464Z ##[end-action id=__self.maven-cache.restore-maven-repository;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T22:27:09.0718422Z ##[start-action display=Restore Quarkus snapshot cache;id=__self.maven-cache.restore-quarkus-snapshot]
+2026-11-19T22:27:09.0722987Z ##[end-action id=__self.maven-cache.restore-quarkus-snapshot;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T22:27:09.0724475Z ##[start-action display=Node cache;id=__self.maven-cache.node-cache]
+2026-11-19T22:27:09.0745600Z Prepare all required actions
+2026-11-19T22:27:09.0745962Z Getting action download info
+2026-11-19T22:27:09.1998004Z ##[group]Run ./.github/actions/node-cache
+2026-11-19T22:27:09.1998268Z env:
+2026-11-19T22:27:09.1998520Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:09.1998907Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:09.1999601Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:09.2000217Z ##[endgroup]
+2026-11-19T22:27:09.2004078Z ##[start-action display=Get Node.js and PNPM versions;id=__self.maven-cache.node-cache.tooling-versions]
+2026-11-19T22:27:09.2017329Z ##[group]Run echo "node=$(cat js/pom.xml | grep '<node.version>' | cut -d '>' -f 2 | cut -d '<' -f 1 | cut -c 2-)" >> $GITHUB_OUTPUT
+2026-11-19T22:27:09.2018019Z [36;1mecho "node=$(cat js/pom.xml | grep '<node.version>' | cut -d '>' -f 2 | cut -d '<' -f 1 | cut -c 2-)" >> $GITHUB_OUTPUT[0m
+2026-11-19T22:27:09.2018529Z [36;1mecho "pnpm=$(cat js/pom.xml | grep '<pnpm.version>' | cut -d '>' -f 2 | cut -d '<' -f 1 | cut -c 1-)" >> $GITHUB_OUTPUT[0m
+2026-11-19T22:27:09.2062873Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T22:27:09.2063309Z env:
+2026-11-19T22:27:09.2063556Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:09.2063930Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:09.2064624Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:09.2065205Z ##[endgroup]
+2026-11-19T22:27:09.2232105Z ##[end-action id=__self.maven-cache.node-cache.tooling-versions;outcome=success;conclusion=success;duration_ms=22]
+2026-11-19T22:27:09.2234253Z ##[start-action display=Cache Node.js and PNPM binaries;id=__self.maven-cache.node-cache.cache-binaries]
+2026-11-19T22:27:09.2265678Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T22:27:09.2265957Z with:
+2026-11-19T22:27:09.2266261Z   path: ~/.m2/repository/com/github/eirslett/node
+~/.m2/repository/com/github/eirslett/pnpm
+
+2026-11-19T22:27:09.2266669Z   key: Linux-frontend-plugin-artifacts-24.22.2-11.1.1
+2026-11-19T22:27:09.2266938Z   enableCrossOsArchive: false
+2026-11-19T22:27:09.2267142Z   fail-on-cache-miss: false
+2026-11-19T22:27:09.2267338Z   lookup-only: false
+2026-11-19T22:27:09.2267514Z   save-always: false
+2026-11-19T22:27:09.2268015Z env:
+2026-11-19T22:27:09.2268291Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:09.2268663Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:09.2269371Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:09.2269981Z ##[endgroup]
+2026-11-19T22:27:09.5165826Z Cache not found for input keys: Linux-frontend-plugin-artifacts-24.22.2-11.1.1
+2026-11-19T22:27:09.5225179Z ##[end-action id=__self.maven-cache.node-cache.cache-binaries;outcome=success;conclusion=success;duration_ms=299]
+2026-11-19T22:27:09.5227608Z ##[start-action display=Download Node.js and PNPM;id=__self.maven-cache.node-cache.__run]
+2026-11-19T22:27:09.5279586Z ##[group]Run ./.github/scripts/download-node-tooling.sh 24.22.2 11.1.1
+2026-11-19T22:27:09.5279975Z [36;1m./.github/scripts/download-node-tooling.sh 24.22.2 11.1.1[0m
+2026-11-19T22:27:09.5323829Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T22:27:09.5324096Z env:
+2026-11-19T22:27:09.5324350Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:09.5324773Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:09.5325647Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:09.5326270Z ##[endgroup]
+2026-11-19T22:27:09.5450977Z Downloading node-v24.22.2-linux-x64.tar.gz...
+2026-11-19T22:27:09.8464880Z Downloading node.exe...
+2026-11-19T22:27:10.3327990Z Downloading pnpm-11.1.1.tgz...
+2026-11-19T22:27:10.4978385Z ##[end-action id=__self.maven-cache.node-cache.__run;outcome=success;conclusion=success;duration_ms=974]
+2026-11-19T22:27:10.4982264Z ##[end-action id=__self.maven-cache.node-cache;outcome=success;conclusion=success;duration_ms=1425]
+2026-11-19T22:27:10.4998825Z ##[end-action id=__self.maven-cache;outcome=success;conclusion=success;duration_ms=2593]
+2026-11-19T22:27:10.5000634Z ##[start-action display=PNPM store cache;id=__self.pnpm-store-cache]
+2026-11-19T22:27:10.5026691Z Prepare all required actions
+2026-11-19T22:27:10.5027070Z Getting action download info
+2026-11-19T22:27:10.6284176Z Download action repository 'google/wireit@9d7c2e5346f8ef1b1ab6014c4e96c74e234f7ed5' (SHA:9d7c2e5346f8ef1b1ab6014c4e96c74e234f7ed5)
+2026-11-19T22:27:10.8785804Z ##[group]Run ./.github/actions/pnpm-store-cache
+2026-11-19T22:27:10.8786052Z env:
+2026-11-19T22:27:10.8786434Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:10.8786822Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:10.8787537Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:10.8788373Z ##[endgroup]
+2026-11-19T22:27:10.8792747Z ##[start-action display=Key for weekly rotation of cache;id=__self.pnpm-store-cache.weekly-cache-key]
+2026-11-19T22:27:10.8805674Z ##[group]Run echo "key=pnpm-store-`date -u "+%Y-%U"`" >> $GITHUB_OUTPUT
+2026-11-19T22:27:10.8806039Z [36;1mecho "key=pnpm-store-`date -u "+%Y-%U"`" >> $GITHUB_OUTPUT[0m
+2026-11-19T22:27:10.8848310Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T22:27:10.8848598Z env:
+2026-11-19T22:27:10.8848844Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:10.8849219Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:10.8849931Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:10.8850508Z ##[endgroup]
+2026-11-19T22:27:10.8941911Z ##[end-action id=__self.pnpm-store-cache.weekly-cache-key;outcome=success;conclusion=success;duration_ms=14]
+2026-11-19T22:27:10.8943778Z ##[start-action display=Cache PNPM store;id=__self.pnpm-store-cache.__actions_cache]
+2026-11-19T22:27:10.8972219Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T22:27:10.8972497Z with:
+2026-11-19T22:27:10.8972769Z   path: ~/.local/share/pnpm/store
+~/AppData/Local/pnpm/store
+~/Library/pnpm/store
+
+2026-11-19T22:27:10.8973094Z   key: Linux-pnpm-store-2026-46
+2026-11-19T22:27:10.8973308Z   enableCrossOsArchive: false
+2026-11-19T22:27:10.8973511Z   fail-on-cache-miss: false
+2026-11-19T22:27:10.8973716Z   lookup-only: false
+2026-11-19T22:27:10.8973894Z   save-always: false
+2026-11-19T22:27:10.8974057Z env:
+2026-11-19T22:27:10.8974295Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:10.8974674Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:10.8975388Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:10.8975997Z ##[endgroup]
+2026-11-19T22:27:11.1930154Z Cache not found for input keys: Linux-pnpm-store-2026-46
+2026-11-19T22:27:11.1990614Z ##[end-action id=__self.pnpm-store-cache.__actions_cache;outcome=success;conclusion=success;duration_ms=304]
+2026-11-19T22:27:11.1992780Z ##[start-action display=Get Kiota version;id=__self.pnpm-store-cache.kiota-version]
+2026-11-19T22:27:11.2009184Z ##[group]Run echo "version=$(grep -o '"KIOTA_VERSION": "[^"]*"' js/libs/keycloak-admin-client/package.json | cut -d '"' -f 4)" >> $GITHUB_OUTPUT
+2026-11-19T22:27:11.2009889Z [36;1mecho "version=$(grep -o '"KIOTA_VERSION": "[^"]*"' js/libs/keycloak-admin-client/package.json | cut -d '"' -f 4)" >> $GITHUB_OUTPUT[0m
+2026-11-19T22:27:11.2054704Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T22:27:11.2054991Z env:
+2026-11-19T22:27:11.2055233Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:11.2055602Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:11.2056287Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:11.2056880Z ##[endgroup]
+2026-11-19T22:27:11.2169555Z ##[end-action id=__self.pnpm-store-cache.kiota-version;outcome=success;conclusion=success;duration_ms=17]
+2026-11-19T22:27:11.2171599Z ##[start-action display=Cache Kiota binary;id=__self.pnpm-store-cache.__actions_cache_2]
+2026-11-19T22:27:11.2203162Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T22:27:11.2203446Z with:
+2026-11-19T22:27:11.2203635Z   path: js/libs/keycloak-admin-client/.kiota
+2026-11-19T22:27:11.2203870Z   key: Linux-kiota-v1.32.4
+2026-11-19T22:27:11.2204106Z   enableCrossOsArchive: false
+2026-11-19T22:27:11.2204321Z   fail-on-cache-miss: false
+2026-11-19T22:27:11.2204514Z   lookup-only: false
+2026-11-19T22:27:11.2204692Z   save-always: false
+2026-11-19T22:27:11.2204858Z env:
+2026-11-19T22:27:11.2205099Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:11.2205473Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:11.2206173Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:11.2206775Z ##[endgroup]
+2026-11-19T22:27:11.5141628Z Cache not found for input keys: Linux-kiota-v1.32.4
+2026-11-19T22:27:11.5201355Z ##[end-action id=__self.pnpm-store-cache.__actions_cache_2;outcome=success;conclusion=success;duration_ms=302]
+2026-11-19T22:27:11.5204415Z ##[start-action display=Set up Wireit GitHub Actions caching;id=__self.pnpm-store-cache.__google_wireit]
+2026-11-19T22:27:11.5236999Z ##[group]Run google/wireit@9d7c2e5346f8ef1b1ab6014c4e96c74e234f7ed5
+2026-11-19T22:27:11.5237279Z env:
+2026-11-19T22:27:11.5237513Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:11.5238091Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:11.5238779Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:11.5239369Z ##[endgroup]
+2026-11-19T22:27:11.5485942Z [main] Launching background custodian service
+2026-11-19T22:27:11.5491614Z [main] Writing logs to /tmp/wireit_custodian_logs_FeqZEp
+2026-11-19T22:27:13.6680840Z 
+2026-11-19T22:27:13.6681412Z [custodian] Trying port 50548
+2026-11-19T22:27:13.6681772Z [custodian] Listening on port 50548
+2026-11-19T22:27:13.6681976Z 
+2026-11-19T22:27:13.6682089Z [main] Custodian server ready
+2026-11-19T22:27:13.6725032Z ##[end-action id=__self.pnpm-store-cache.__google_wireit;outcome=success;conclusion=success;duration_ms=2151]
+2026-11-19T22:27:13.6730588Z ##[end-action id=__self.pnpm-store-cache;outcome=success;conclusion=success;duration_ms=3172]
+2026-11-19T22:27:13.6733252Z ##[start-action display=Build Keycloak;id=__self.build-keycloak]
+2026-11-19T22:27:13.6753943Z ##[group]Run # Ensure this plugin is built first to avoid warnings in the build
+2026-11-19T22:27:13.6754632Z [36;1m# Ensure this plugin is built first to avoid warnings in the build[0m
+2026-11-19T22:27:13.6755260Z [36;1m./mvnw install -V -e -DskipTests -DskipExamples -DcommitProtoLockChanges=true[0m
+2026-11-19T22:27:13.6818256Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T22:27:13.6818601Z env:
+2026-11-19T22:27:13.6818863Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:13.6819249Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-19T22:27:13.6819959Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-19T22:27:13.6820562Z   WIREIT_CACHE: github
+2026-11-19T22:27:13.6820768Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 50548
+2026-11-19T22:27:13.6820989Z ##[endgroup]
+2026-11-19T22:27:13.8431129Z wget: Failed to fetch https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.16/apache-maven-3.9.16-bin.zip
+2026-11-19T22:27:13.8454330Z ##[error]Process completed with exit code 1.
+2026-11-19T22:27:13.8460584Z ##[end-action id=__self.build-keycloak;outcome=failure;conclusion=failure;duration_ms=172]
+2026-11-19T22:27:13.8463814Z ##[start-action display=Compress Keycloak Maven artifacts;id=__self.compress-keycloak-maven-repository]
+2026-11-19T22:27:13.8466988Z ##[end-action id=__self.compress-keycloak-maven-repository;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T22:27:13.8468802Z ##[start-action display=Upload Keycloak Maven artifacts;id=__self.upload-keycloak-maven-repository]
+2026-11-19T22:27:13.8470820Z ##[end-action id=__self.upload-keycloak-maven-repository;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T22:27:13.8472208Z ##[start-action display=Upload Keycloak dist;id=__self.upload-keycloak-dist]
+2026-11-19T22:27:13.8473907Z ##[end-action id=__self.upload-keycloak-dist;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T22:27:13.8475293Z ##[start-action display=Pre-fetch dependencies for later jobs;id=__self.prefetch-dependencies]
+2026-11-19T22:27:13.8477194Z ##[end-action id=__self.prefetch-dependencies;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T22:27:13.8582595Z Post job cleanup.
+2026-11-19T22:27:13.8587958Z ##[start-action display=Cache Kiota binary;id=__410e1a1a-614f-4245-b82e-edd772ed3061.__actions_cache_2]
+2026-11-19T22:27:13.8589658Z ##[end-action id=__410e1a1a-614f-4245-b82e-edd772ed3061.__actions_cache_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T22:27:13.8591094Z ##[start-action display=Cache PNPM store;id=__410e1a1a-614f-4245-b82e-edd772ed3061.__actions_cache]
+2026-11-19T22:27:13.8592521Z ##[end-action id=__410e1a1a-614f-4245-b82e-edd772ed3061.__actions_cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T22:27:13.8593962Z ##[start-action display=Cache Node.js and PNPM binaries;id=__410e1a1a-614f-4245-b82e-edd772ed3061.cache-binaries]
+2026-11-19T22:27:13.8595430Z ##[end-action id=__410e1a1a-614f-4245-b82e-edd772ed3061.cache-binaries;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T22:27:13.8596844Z ##[start-action display=Maven cache;id=__410e1a1a-614f-4245-b82e-edd772ed3061.cache-maven-repository]
+2026-11-19T22:27:13.8598542Z ##[end-action id=__410e1a1a-614f-4245-b82e-edd772ed3061.cache-maven-repository;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T22:27:13.8599977Z ##[start-action display=Setup Java;id=__410e1a1a-614f-4245-b82e-edd772ed3061.setup-java]
+2026-11-19T22:27:13.8655611Z Post job cleanup.
+2026-11-19T22:27:13.9322723Z ##[end-action id=__410e1a1a-614f-4245-b82e-edd772ed3061.setup-java;outcome=success;conclusion=success;duration_ms=72]
+2026-11-19T22:27:13.9406885Z Post job cleanup.
+2026-11-19T22:27:14.0122203Z [command]/usr/bin/git version
+2026-11-19T22:27:14.0167064Z git version 2.56.1
+2026-11-19T22:27:14.0195234Z Temporarily overriding HOME='/home/runner/work/_temp/34e58704-a5bf-4531-9a55-ea79d7cec6cf' before making global git config changes
+2026-11-19T22:27:14.0196201Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T22:27:14.0201178Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+2026-11-19T22:27:14.0237518Z Removing SSH command configuration
+2026-11-19T22:27:14.0244567Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T22:27:14.0276414Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T22:27:14.0555996Z Removing HTTP extra header
+2026-11-19T22:27:14.0562041Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T22:27:14.0600529Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T22:27:14.0915308Z Removing includeIf entries pointing to credentials config files
+2026-11-19T22:27:14.0921741Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T22:27:14.0945554Z includeif.gitdir:/home/runner/work/keycloak/keycloak/.git.path
+2026-11-19T22:27:14.0946405Z includeif.gitdir:/home/runner/work/keycloak/keycloak/.git/worktrees/*.path
+2026-11-19T22:27:14.0947158Z includeif.gitdir:/github/workspace/.git.path
+2026-11-19T22:27:14.0947928Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T22:27:14.0952835Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/keycloak/keycloak/.git.path
+2026-11-19T22:27:14.0974666Z /home/runner/work/_temp/git-credentials-b9287f9d-b285-4765-96b2-0b67ce132998.config
+2026-11-19T22:27:14.0982843Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/keycloak/keycloak/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-b9287f9d\-b285\-4765\-96b2\-0b67ce132998\.config
+2026-11-19T22:27:14.1015855Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/keycloak/keycloak/.git/worktrees/*.path
+2026-11-19T22:27:14.1039864Z /home/runner/work/_temp/git-credentials-b9287f9d-b285-4765-96b2-0b67ce132998.config
+2026-11-19T22:27:14.1052992Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/keycloak/keycloak/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-b9287f9d\-b285\-4765\-96b2\-0b67ce132998\.config
+2026-11-19T22:27:14.1083071Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-19T22:27:14.1103774Z /github/runner_temp/git-credentials-b9287f9d-b285-4765-96b2-0b67ce132998.config
+2026-11-19T22:27:14.1111089Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-b9287f9d\-b285\-4765\-96b2\-0b67ce132998\.config
+2026-11-19T22:27:14.1141176Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T22:27:14.1163311Z /github/runner_temp/git-credentials-b9287f9d-b285-4765-96b2-0b67ce132998.config
+2026-11-19T22:27:14.1167303Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-b9287f9d\-b285\-4765\-96b2\-0b67ce132998\.config
+2026-11-19T22:27:14.1200502Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T22:27:14.1458036Z Removing credentials config '/home/runner/work/_temp/git-credentials-b9287f9d-b285-4765-96b2-0b67ce132998.config'
+2026-11-19T22:27:14.1584613Z Cleaning up orphan processes
+2026-11-19T22:27:14.1891862Z Terminate orphan process: pid (2319) (MainThread)

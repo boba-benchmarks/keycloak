@@ -1,0 +1,21 @@
+{
+ "at": "2026-11-19T22:27:33+00:00",
+ "suite": "keycloak",
+ "repo": "boba-benchmarks/keycloak",
+ "runner": "github-4",
+ "shards": "1",
+ "note": "setup",
+ "run": "https://github.com/boba-benchmarks/keycloak/actions/runs/44628707069",
+ "run_id": 44628707069,
+ "sha": "bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a",
+ "conclusion": "failure",
+ "wall_s": 15,
+ "queue_s": 6,
+ "job_s": 15,
+ "jobs": 1,
+ "job_max_s": 15,
+ "vcpu_min": 1.0,
+ "billed_min": 1,
+ "usd": 0.012,
+ "tests": null
+}

@@ -1,0 +1,99 @@
+[
+ {
+  "id": 135955694853,
+  "name": "Build Keycloak (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/keycloak/actions/runs/44636333437/job/135955694853",
+  "status": "completed",
+  "conclusion": "failure",
+  "created_at": "2026-11-19T23:17:16Z",
+  "started_at": "2026-11-19T23:17:17Z",
+  "completed_at": "2026-11-19T23:20:23Z",
+  "labels": [
+   "ubuntu-26.04"
+  ],
+  "runner_name": "GitHub Actions 1000000295",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T23:17:18Z",
+    "completed_at": "2026-11-19T23:17:20Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T23:17:20Z",
+    "completed_at": "2026-11-19T23:17:26Z"
+   },
+   {
+    "name": "Build Keycloak",
+    "status": "completed",
+    "conclusion": "failure",
+    "number": 3,
+    "started_at": "2026-11-19T23:17:26Z",
+    "completed_at": "2026-11-19T23:20:21Z"
+   },
+   {
+    "name": "Prepare archive for upload",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-19T23:20:21Z",
+    "completed_at": "2026-11-19T23:20:21Z"
+   },
+   {
+    "name": "Upload Keycloak dist",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 5,
+    "started_at": "2026-11-19T23:20:21Z",
+    "completed_at": "2026-11-19T23:20:21Z"
+   },
+   {
+    "name": "Post Build Keycloak",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T23:20:21Z",
+    "completed_at": "2026-11-19T23:20:21Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T23:20:21Z",
+    "completed_at": "2026-11-19T23:20:21Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T23:20:21Z",
+    "completed_at": "2026-11-19T23:20:22Z"
+   }
+  ]
+ },
+ {
+  "id": 135957256907,
+  "name": "Admin UI E2E ${{ matrix.browser }} (${{ inputs.runner }})",
+  "html_url": "https://github.com/boba-benchmarks/keycloak/actions/runs/44636333437/job/135957256907",
+  "status": "completed",
+  "conclusion": "skipped",
+  "created_at": "2026-11-19T23:20:23Z",
+  "started_at": "2026-11-19T23:20:23Z",
+  "completed_at": "2026-11-19T23:20:23Z",
+  "labels": [
+   "ubuntu-26.04"
+  ],
+  "runner_name": null,
+  "runner_group_name": null,
+  "steps": []
+ }
+]

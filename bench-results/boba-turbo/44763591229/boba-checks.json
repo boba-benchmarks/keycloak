@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Boba / Admin UI E2E firefox (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136386756613",
+  "conclusion": "success",
+  "started_at": "2026-11-20T15:33:48Z",
+  "completed_at": "2026-11-20T15:35:57Z",
+  "title": "493 passed",
+  "summary": "### \u2705 All 493 tests passed in 2 min 9 s\n\nOn bf6e41d \u00b7 4 min 48 s into the job \u00b7 5 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_082b69cc85616ec3/5f6e3191e7286f37b42fcf25401b7235/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Admin UI E2E chromium (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136385847943",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T15:32:53Z",
+  "completed_at": "2026-11-20T15:34:25Z",
+  "title": "495 passed, 1 flaky",
+  "summary": "### \u2705 All 495 tests passed in 1 min 32 s\n\nOn bf6e41d \u00b7 3 min 16 s into the job \u00b7 3 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_1e4f4c50abdeb481/0a7fcfd035ec347d9099efdbbfaac127/html/index.html)\n\n<details>\n<summary>1 flaky test, not blocking</summary>\n\n`Add/remove attribute` failed once here, then passed on retry\n\n</details>\n\n\u26a0\ufe0f Playwright exited with an error after the tests, so the check fails",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136383881055",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T15:31:11Z",
+  "completed_at": "2026-11-20T15:36:07Z",
+  "title": "1 of 3 Boba jobs failed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| [Admin UI E2E chromium (boba-turbo)](https://github.com/boba-benchmarks/keycloak/runs/136385847943) | **Failed** | 495 passed, 1 flaky |\n| [Admin UI E2E firefox (boba-turbo)](https://github.com/boba-benchmarks/keycloak/runs/136386756613) | Passed | 493 passed |\n| Build Keycloak (boba-turbo) | Passed | The job ended (success) |",
+  "text": null
+ }
+]

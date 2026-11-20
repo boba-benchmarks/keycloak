@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Boba / Admin UI E2E firefox (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136625282104",
+  "conclusion": "success",
+  "started_at": "2026-11-20T23:01:09Z",
+  "completed_at": "2026-11-20T23:03:17Z",
+  "title": "493 passed",
+  "summary": "### \u2705 All 493 tests passed in 2 min 8 s\n\nOn bf6e41d \u00b7 3 min 37 s into the job \u00b7 5 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_1d2a9332c0eeb416/aba72eab35ad7186e633b411986ccbc4/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Admin UI E2E chromium (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136625167200",
+  "conclusion": "success",
+  "started_at": "2026-11-20T23:01:15Z",
+  "completed_at": "2026-11-20T23:03:01Z",
+  "title": "495 passed",
+  "summary": "### \u2705 All 495 tests passed in 1 min 46 s\n\nOn bf6e41d \u00b7 3 min 22 s into the job \u00b7 3 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_ec134128b7347c60/3a7a0fda1147ae3465bbe03f224b3be8/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136623643702",
+  "conclusion": "success",
+  "started_at": "2026-11-20T22:59:41Z",
+  "completed_at": "2026-11-20T23:03:23Z",
+  "title": "All 3 Boba jobs passed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| [Admin UI E2E chromium (boba-turbo)](https://github.com/boba-benchmarks/keycloak/runs/136625167200) | Passed | 495 passed |\n| [Admin UI E2E firefox (boba-turbo)](https://github.com/boba-benchmarks/keycloak/runs/136625282104) | Passed | 493 passed |\n| Build Keycloak (boba-turbo) | Passed | The job ended (success) |",
+  "text": null
+ }
+]

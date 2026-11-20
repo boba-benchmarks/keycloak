@@ -1,0 +1,13 @@
+{
+ "id": 44697956683,
+ "html_url": "https://github.com/boba-benchmarks/keycloak/actions/runs/44697956683",
+ "head_sha": "bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a",
+ "head_branch": "main",
+ "event": "workflow_dispatch",
+ "status": "completed",
+ "conclusion": "failure",
+ "created_at": "2026-11-20T07:50:44Z",
+ "updated_at": "2026-11-20T08:00:00Z",
+ "run_started_at": "2026-11-20T07:50:44Z",
+ "run_attempt": 1
+}

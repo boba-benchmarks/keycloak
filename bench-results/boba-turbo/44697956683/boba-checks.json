@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Boba / Admin UI E2E firefox (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136162746925",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T07:55:40Z",
+  "completed_at": "2026-11-20T07:59:48Z",
+  "title": "493 passed, 1 flaky",
+  "summary": "### \u2705 All 493 tests passed in 4 min 8 s\n\nOn bf6e41d \u00b7 6 min 11 s into the job \u00b7 5 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_77bc3333cdc68b7f/38d39cd1c8fbcb82c890f0d804c8fd81/html/index.html)\n\n<details>\n<summary>1 flaky test, not blocking</summary>\n\n`should create a JWT Authorization Grant provider with public key pem` failed once here, then passed on retry\n\n</details>\n\n\u26a0\ufe0f Playwright exited with an error after the tests, so the check fails",
+  "text": null
+ },
+ {
+  "name": "Boba / Admin UI E2E chromium (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136161975680",
+  "conclusion": "success",
+  "started_at": "2026-11-20T07:55:25Z",
+  "completed_at": "2026-11-20T07:57:49Z",
+  "title": "495 passed",
+  "summary": "### \u2705 All 495 tests passed in 2 min 23 s\n\nOn bf6e41d \u00b7 4 min 14 s into the job \u00b7 3 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_e4d12705fcc535ee/0c1f154d4af8db73447638096bc6143b/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136160275668",
+  "conclusion": null,
+  "started_at": "2026-11-20T07:53:37Z",
+  "completed_at": null,
+  "title": "2 of 3 Boba jobs finished",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| [Admin UI E2E chromium (boba-turbo)](https://github.com/boba-benchmarks/keycloak/runs/136161975680) | Passed | 495 passed |\n| Admin UI E2E firefox (boba-turbo) | Pending | Running |\n| Build Keycloak (boba-turbo) | Passed | The job ended (success) |",
+  "text": null
+ }
+]

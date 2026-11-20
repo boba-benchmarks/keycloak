@@ -1,0 +1,1549 @@
+﻿2026-11-20T07:53:42.5745675Z Current runner version: '2.338.2'
+2026-11-20T07:53:42.5750513Z Runner name: 'boba-136160238601-1'
+2026-11-20T07:53:42.5751377Z Runner group name: 'coldtea boba - keycloak'
+2026-11-20T07:53:42.5752244Z Machine name: 'ubuntu'
+2026-11-20T07:53:42.5754534Z ##[group]GITHUB_TOKEN Permissions
+2026-11-20T07:53:42.5756273Z Actions: read
+2026-11-20T07:53:42.5756815Z Checks: write
+2026-11-20T07:53:42.5757402Z Contents: read
+2026-11-20T07:53:42.5757925Z Metadata: read
+2026-11-20T07:53:42.5758405Z PullRequests: write
+2026-11-20T07:53:42.5759050Z ##[endgroup]
+2026-11-20T07:53:42.5760636Z Secret source: Actions
+2026-11-20T07:53:42.5761660Z Cache mode: write
+2026-11-20T07:53:42.5762442Z Prepare workflow directory
+2026-11-20T07:53:42.6018758Z Prepare all required actions
+2026-11-20T07:53:42.6047702Z Getting action download info
+2026-11-20T07:53:43.0383043Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-20T07:53:43.0863343Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+2026-11-20T07:53:43.4597161Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-20T07:53:43.7986136Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-11-20T07:53:43.9526485Z Complete job name: Admin UI E2E firefox (boba-turbo)
+2026-11-20T07:53:43.9942303Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-20T07:53:44.0129603Z ##[group]Run '/run/boba/job-started.sh'
+2026-11-20T07:53:44.0142430Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:53:44.0143364Z ##[endgroup]
+2026-11-20T07:53:44.0939910Z Boba checked this job in 66 ms; dependency cache: box disk; databases: fresh
+2026-11-20T07:53:44.1151609Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-20T07:53:44.1152665Z with:
+2026-11-20T07:53:44.1153243Z   repository: boba-benchmarks/keycloak
+2026-11-20T07:53:44.1158310Z   token: ***
+2026-11-20T07:53:44.1158834Z   ssh-strict: true
+2026-11-20T07:53:44.1159362Z   ssh-user: git
+2026-11-20T07:53:44.1159960Z   persist-credentials: true
+2026-11-20T07:53:44.1160567Z   clean: true
+2026-11-20T07:53:44.1161173Z   sparse-checkout-cone-mode: true
+2026-11-20T07:53:44.1161811Z   fetch-depth: 1
+2026-11-20T07:53:44.1162372Z   fetch-tags: false
+2026-11-20T07:53:44.1162969Z   show-progress: true
+2026-11-20T07:53:44.1163505Z   lfs: false
+2026-11-20T07:53:44.1164037Z   submodules: false
+2026-11-20T07:53:44.1164604Z   set-safe-directory: true
+2026-11-20T07:53:44.1165211Z   allow-unsafe-pr-checkout: false
+2026-11-20T07:53:44.1165886Z env:
+2026-11-20T07:53:44.1166422Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:44.1167137Z ##[endgroup]
+2026-11-20T07:53:44.2886751Z Syncing repository: boba-benchmarks/keycloak
+2026-11-20T07:53:44.2888270Z ##[group]Getting Git version info
+2026-11-20T07:53:44.2889025Z Working directory is '/home/runner/work/keycloak/keycloak'
+2026-11-20T07:53:44.2890084Z [command]/usr/bin/git version
+2026-11-20T07:53:44.2940203Z git version 2.56.1
+2026-11-20T07:53:44.2951635Z ##[endgroup]
+2026-11-20T07:53:44.2957032Z Temporarily overriding HOME='/home/runner/work/_temp/e1969c4d-e8be-4172-b64f-b957797dad99' before making global git config changes
+2026-11-20T07:53:44.2958560Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T07:53:44.2959792Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+2026-11-20T07:53:44.2990099Z Deleting the contents of '/home/runner/work/keycloak/keycloak'
+2026-11-20T07:53:44.2992636Z ##[group]Determining repository object format
+2026-11-20T07:53:44.2993651Z ##[endgroup]
+2026-11-20T07:53:44.2994405Z ##[group]Initializing the repository
+2026-11-20T07:53:44.2996792Z [command]/usr/bin/git init /home/runner/work/keycloak/keycloak
+2026-11-20T07:53:44.3051849Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-20T07:53:44.3053227Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-20T07:53:44.3054560Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-20T07:53:44.3055403Z hint: call:
+2026-11-20T07:53:44.3055822Z hint:
+2026-11-20T07:53:44.3056649Z hint: 	git config --global init.defaultBranch <name>
+2026-11-20T07:53:44.3057316Z hint:
+2026-11-20T07:53:44.3057988Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-20T07:53:44.3058982Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-20T07:53:44.3059781Z hint:
+2026-11-20T07:53:44.3060211Z hint: 	git branch -m <name>
+2026-11-20T07:53:44.3060710Z hint:
+2026-11-20T07:53:44.3061396Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-20T07:53:44.3062499Z Initialized empty Git repository in /home/runner/work/keycloak/keycloak/.git/
+2026-11-20T07:53:44.3064483Z [command]/usr/bin/git remote add origin https://github.com/boba-benchmarks/keycloak
+2026-11-20T07:53:44.3092409Z ##[endgroup]
+2026-11-20T07:53:44.3093565Z ##[group]Disabling automatic garbage collection
+2026-11-20T07:53:44.3094611Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-20T07:53:44.3117302Z ##[endgroup]
+2026-11-20T07:53:44.3118159Z ##[group]Setting up auth
+2026-11-20T07:53:44.3118706Z Removing SSH command configuration
+2026-11-20T07:53:44.3119764Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T07:53:44.3142108Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T07:53:44.3400405Z Removing HTTP extra header
+2026-11-20T07:53:44.3404085Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T07:53:44.3424162Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T07:53:44.3599665Z Removing includeIf entries pointing to credentials config files
+2026-11-20T07:53:44.3603337Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-20T07:53:44.3630800Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-20T07:53:44.3820991Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-314ae3de-3070-4bf1-8e03-29ec2f6d05de.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-20T07:53:44.3843655Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/keycloak/keycloak/.git.path /home/runner/work/_temp/git-credentials-314ae3de-3070-4bf1-8e03-29ec2f6d05de.config
+2026-11-20T07:53:44.3867786Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/keycloak/keycloak/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-314ae3de-3070-4bf1-8e03-29ec2f6d05de.config
+2026-11-20T07:53:44.3888563Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-314ae3de-3070-4bf1-8e03-29ec2f6d05de.config
+2026-11-20T07:53:44.3909631Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-314ae3de-3070-4bf1-8e03-29ec2f6d05de.config
+2026-11-20T07:53:44.3928981Z ##[endgroup]
+2026-11-20T07:53:44.3929748Z ##[group]Fetching the repository
+2026-11-20T07:53:44.3932659Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a:refs/remotes/origin/main
+2026-11-20T07:53:46.5219261Z From https://github.com/boba-benchmarks/keycloak
+2026-11-20T07:53:46.5220172Z  * [new ref]           bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a -> origin/main
+2026-11-20T07:53:46.5226048Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-20T07:53:46.5245944Z   origin/main
+2026-11-20T07:53:46.5253010Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-20T07:53:46.5271183Z bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a
+2026-11-20T07:53:46.5273820Z ##[endgroup]
+2026-11-20T07:53:46.5274142Z ##[group]Determining the checkout info
+2026-11-20T07:53:46.5274556Z ##[endgroup]
+2026-11-20T07:53:46.5276702Z [command]/usr/bin/git sparse-checkout disable
+2026-11-20T07:53:46.5306372Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-20T07:53:46.5326915Z ##[group]Checking out the ref
+2026-11-20T07:53:46.5328158Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-20T07:53:47.4978545Z Switched to a new branch 'main'
+2026-11-20T07:53:47.4979125Z branch 'main' set up to track 'origin/main'.
+2026-11-20T07:53:47.5040274Z ##[endgroup]
+2026-11-20T07:53:47.5071832Z [command]/usr/bin/git log -1 --format=%H
+2026-11-20T07:53:47.5090442Z bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a
+2026-11-20T07:53:47.5261488Z Prepare all required actions
+2026-11-20T07:53:47.5261831Z Getting action download info
+2026-11-20T07:53:47.6854462Z Download action repository 'actions/setup-node@820762786026740c76f36085b0efc47a31fe5020' (SHA:820762786026740c76f36085b0efc47a31fe5020)
+2026-11-20T07:53:47.7639202Z ##[group]Run ./.github/actions/pnpm-setup
+2026-11-20T07:53:47.7639378Z env:
+2026-11-20T07:53:47.7639508Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:47.7639687Z ##[endgroup]
+2026-11-20T07:53:47.7672992Z ##[start-action display=Get Node.js version;id=__self.node-version]
+2026-11-20T07:53:47.7688866Z ##[group]Run echo "version=$(grep '<node.version>' js/pom.xml | cut -d '>' -f 2 | cut -d '<' -f 1 | cut -c 2-)" >> $GITHUB_OUTPUT
+2026-11-20T07:53:47.7689319Z [36;1mecho "version=$(grep '<node.version>' js/pom.xml | cut -d '>' -f 2 | cut -d '<' -f 1 | cut -c 2-)" >> $GITHUB_OUTPUT[0m
+2026-11-20T07:53:47.7701556Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:53:47.7701796Z env:
+2026-11-20T07:53:47.7702021Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:47.7702189Z ##[endgroup]
+2026-11-20T07:53:47.7766327Z ##[end-action id=__self.node-version;outcome=success;conclusion=success;duration_ms=9]
+2026-11-20T07:53:47.7767766Z ##[start-action display=Set up Node.js;id=__self.__actions_setup-node]
+2026-11-20T07:53:47.7809887Z ##[group]Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+2026-11-20T07:53:47.7810217Z with:
+2026-11-20T07:53:47.7810342Z   node-version: 24.22.2
+2026-11-20T07:53:47.7810483Z   check-latest: false
+2026-11-20T07:53:47.7811841Z   token: ***
+2026-11-20T07:53:47.7811975Z   package-manager-cache: true
+2026-11-20T07:53:47.7812120Z env:
+2026-11-20T07:53:47.7812245Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:47.7812399Z ##[endgroup]
+2026-11-20T07:53:47.8632321Z Attempting to download 24.22.2...
+2026-11-20T07:53:48.6899253Z Acquiring 24.22.2 - x64 from https://github.com/actions/node-versions/releases/download/24.22.2-40806817314/node-24.22.2-linux-x64.tar.gz
+2026-11-20T07:53:49.5581318Z Extracting ...
+2026-11-20T07:53:49.5662778Z [command]/usr/local/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/a6595bd4-6a55-4e9b-bb41-eb29f168f957 -f /home/runner/work/_temp/7f785fe8-8e97-4413-b9f5-147b72d9359f
+2026-11-20T07:53:50.3202972Z Adding to the cache ...
+2026-11-20T07:53:51.5459048Z ##[group]Environment details
+2026-11-20T07:53:51.7255172Z node: v24.22.2
+2026-11-20T07:53:51.7255413Z npm: 11.19.1
+2026-11-20T07:53:51.7255590Z yarn: 1.22.22
+2026-11-20T07:53:51.7256023Z ##[endgroup]
+2026-11-20T07:53:51.7441810Z ##[end-action id=__self.__actions_setup-node;outcome=success;conclusion=success;duration_ms=3967]
+2026-11-20T07:53:51.7444126Z ##[start-action display=Setup Corepack;id=__self.__self]
+2026-11-20T07:53:51.7475686Z Prepare all required actions
+2026-11-20T07:53:51.7476104Z Getting action download info
+2026-11-20T07:53:51.9045045Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-20T07:53:51.9927352Z ##[group]Run ./.github/actions/corepack-setup
+2026-11-20T07:53:51.9927527Z env:
+2026-11-20T07:53:51.9927656Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:51.9927817Z ##[endgroup]
+2026-11-20T07:53:51.9931416Z ##[start-action display=Enable Corepack;id=__self.__self.__run]
+2026-11-20T07:53:51.9939968Z ##[group]Run corepack enable
+2026-11-20T07:53:51.9940125Z [36;1mcorepack enable[0m
+2026-11-20T07:53:51.9953524Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:53:51.9953730Z env:
+2026-11-20T07:53:51.9953862Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:51.9954016Z ##[endgroup]
+2026-11-20T07:53:52.0426602Z ##[end-action id=__self.__self.__run;outcome=success;conclusion=success;duration_ms=49]
+2026-11-20T07:53:52.0428323Z ##[start-action display=Generate key for tools cache;id=__self.__self.cache-key]
+2026-11-20T07:53:52.0437949Z ##[group]Run echo "key=corepack-tools-$(jq -r '.packageManager' package.json)" >> $GITHUB_OUTPUT
+2026-11-20T07:53:52.0438305Z [36;1mecho "key=corepack-tools-$(jq -r '.packageManager' package.json)" >> $GITHUB_OUTPUT[0m
+2026-11-20T07:53:52.0449951Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:53:52.0450132Z env:
+2026-11-20T07:53:52.0450260Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:52.0450419Z ##[endgroup]
+2026-11-20T07:53:52.0511673Z ##[end-action id=__self.__self.cache-key;outcome=success;conclusion=success;duration_ms=8]
+2026-11-20T07:53:52.0512893Z ##[start-action display=Cache Corepack tools;id=__self.__self.cache]
+2026-11-20T07:53:52.0551838Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-20T07:53:52.0552037Z with:
+2026-11-20T07:53:52.0552157Z   path: ./js/corepack.tgz
+2026-11-20T07:53:52.0552311Z   key: Linux-corepack-tools-pnpm@11.1.1
+2026-11-20T07:53:52.0552489Z   enableCrossOsArchive: false
+2026-11-20T07:53:52.0552643Z   fail-on-cache-miss: false
+2026-11-20T07:53:52.0552828Z   lookup-only: false
+2026-11-20T07:53:52.0552955Z   save-always: false
+2026-11-20T07:53:52.0553067Z env:
+2026-11-20T07:53:52.0553189Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:52.0553338Z ##[endgroup]
+2026-11-20T07:53:52.4495958Z Cache hit for: Linux-corepack-tools-pnpm@11.1.1
+2026-11-20T07:53:52.4593547Z Cache Size: ~4 MB (4235919 B)
+2026-11-20T07:53:52.4612972Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/fd0a8203-8c65-425a-b5ca-dc9188fe4069/cache.tzst -P -C /home/runner/work/keycloak/keycloak --use-compress-program unzstd
+2026-11-20T07:53:52.5016223Z Cache restored successfully
+2026-11-20T07:53:52.5122989Z Cache restored from key: Linux-corepack-tools-pnpm@11.1.1
+2026-11-20T07:53:52.5211278Z ##[end-action id=__self.__self.cache;outcome=success;conclusion=success;duration_ms=469]
+2026-11-20T07:53:52.5213134Z ##[start-action display=Install Corepack tools from cache;id=__self.__self.__run_2]
+2026-11-20T07:53:52.5225224Z ##[group]Run corepack install -g --cache-only ./corepack.tgz
+2026-11-20T07:53:52.5225466Z [36;1mcorepack install -g --cache-only ./corepack.tgz[0m
+2026-11-20T07:53:52.5237623Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:53:52.5237811Z env:
+2026-11-20T07:53:52.5237944Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:52.5238102Z ##[endgroup]
+2026-11-20T07:53:52.6050479Z Adding pnpm@11.1.1 to the cache...
+2026-11-20T07:53:52.8415768Z ##[end-action id=__self.__self.__run_2;outcome=success;conclusion=success;duration_ms=320]
+2026-11-20T07:53:52.8418018Z ##[start-action display=Package Corepack tools;id=__self.__self.__run_3]
+2026-11-20T07:53:52.8425484Z ##[end-action id=__self.__self.__run_3;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-20T07:53:52.8432110Z ##[end-action id=__self.__self;outcome=success;conclusion=success;duration_ms=1098]
+2026-11-20T07:53:52.8433375Z ##[start-action display=PNPM store cache;id=__self.__self_2]
+2026-11-20T07:53:52.8452038Z Prepare all required actions
+2026-11-20T07:53:52.8452327Z Getting action download info
+2026-11-20T07:53:53.0255243Z Download action repository 'google/wireit@9d7c2e5346f8ef1b1ab6014c4e96c74e234f7ed5' (SHA:9d7c2e5346f8ef1b1ab6014c4e96c74e234f7ed5)
+2026-11-20T07:53:53.2781077Z ##[group]Run ./.github/actions/pnpm-store-cache
+2026-11-20T07:53:53.2781253Z env:
+2026-11-20T07:53:53.2781379Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:53.2781537Z ##[endgroup]
+2026-11-20T07:53:53.2784729Z ##[start-action display=Key for weekly rotation of cache;id=__self.__self_2.weekly-cache-key]
+2026-11-20T07:53:53.2794555Z ##[group]Run echo "key=pnpm-store-`date -u "+%Y-%U"`" >> $GITHUB_OUTPUT
+2026-11-20T07:53:53.2794817Z [36;1mecho "key=pnpm-store-`date -u "+%Y-%U"`" >> $GITHUB_OUTPUT[0m
+2026-11-20T07:53:53.2806337Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:53:53.2806532Z env:
+2026-11-20T07:53:53.2806658Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:53.2806810Z ##[endgroup]
+2026-11-20T07:53:53.2843138Z ##[end-action id=__self.__self_2.weekly-cache-key;outcome=success;conclusion=success;duration_ms=5]
+2026-11-20T07:53:53.2844297Z ##[start-action display=Cache PNPM store;id=__self.__self_2.__actions_cache]
+2026-11-20T07:53:53.2864619Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-20T07:53:53.2864811Z with:
+2026-11-20T07:53:53.2865000Z   path: ~/.local/share/pnpm/store
+~/AppData/Local/pnpm/store
+~/Library/pnpm/store
+
+2026-11-20T07:53:53.2865232Z   key: Linux-pnpm-store-2026-46
+2026-11-20T07:53:53.2865384Z   enableCrossOsArchive: false
+2026-11-20T07:53:53.2865537Z   fail-on-cache-miss: false
+2026-11-20T07:53:53.2865678Z   lookup-only: false
+2026-11-20T07:53:53.2865800Z   save-always: false
+2026-11-20T07:53:53.2865916Z env:
+2026-11-20T07:53:53.2866042Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:53.2866195Z ##[endgroup]
+2026-11-20T07:53:53.4804444Z Cache hit for: Linux-pnpm-store-2026-46
+2026-11-20T07:53:53.7003815Z Cache Size: ~106 MB (111517412 B)
+2026-11-20T07:53:53.7056630Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/f4a52ab6-86bf-424a-aff7-f61189199bdc/cache.tzst -P -C /home/runner/work/keycloak/keycloak --use-compress-program unzstd
+2026-11-20T07:53:56.2285725Z Cache restored successfully
+2026-11-20T07:53:56.2531766Z Cache restored from key: Linux-pnpm-store-2026-46
+2026-11-20T07:53:56.2693513Z ##[end-action id=__self.__self_2.__actions_cache;outcome=success;conclusion=success;duration_ms=2984]
+2026-11-20T07:53:56.2695071Z ##[start-action display=Get Kiota version;id=__self.__self_2.kiota-version]
+2026-11-20T07:53:56.2705306Z ##[group]Run echo "version=$(grep -o '"KIOTA_VERSION": "[^"]*"' js/libs/keycloak-admin-client/package.json | cut -d '"' -f 4)" >> $GITHUB_OUTPUT
+2026-11-20T07:53:56.2705791Z [36;1mecho "version=$(grep -o '"KIOTA_VERSION": "[^"]*"' js/libs/keycloak-admin-client/package.json | cut -d '"' -f 4)" >> $GITHUB_OUTPUT[0m
+2026-11-20T07:53:56.2719221Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:53:56.2719511Z env:
+2026-11-20T07:53:56.2719719Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:56.2719951Z ##[endgroup]
+2026-11-20T07:53:56.2767003Z ##[end-action id=__self.__self_2.kiota-version;outcome=success;conclusion=success;duration_ms=7]
+2026-11-20T07:53:56.2768187Z ##[start-action display=Cache Kiota binary;id=__self.__self_2.__actions_cache_2]
+2026-11-20T07:53:56.2787514Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-20T07:53:56.2788174Z with:
+2026-11-20T07:53:56.2788316Z   path: js/libs/keycloak-admin-client/.kiota
+2026-11-20T07:53:56.2788487Z   key: Linux-kiota-v1.32.4
+2026-11-20T07:53:56.2788634Z   enableCrossOsArchive: false
+2026-11-20T07:53:56.2788778Z   fail-on-cache-miss: false
+2026-11-20T07:53:56.2788919Z   lookup-only: false
+2026-11-20T07:53:56.2789059Z   save-always: false
+2026-11-20T07:53:56.2789181Z env:
+2026-11-20T07:53:56.2789464Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:56.2789623Z ##[endgroup]
+2026-11-20T07:53:56.4756694Z Cache hit for: Linux-kiota-v1.32.4
+2026-11-20T07:53:56.5595187Z Cache Size: ~71 MB (74687268 B)
+2026-11-20T07:53:56.5628222Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/9a434cc3-2fe5-4df1-ac69-daff7bad1d8b/cache.tzst -P -C /home/runner/work/keycloak/keycloak --use-compress-program unzstd
+2026-11-20T07:53:56.9630893Z Cache restored successfully
+2026-11-20T07:53:56.9812940Z Cache restored from key: Linux-kiota-v1.32.4
+2026-11-20T07:53:56.9965799Z ##[end-action id=__self.__self_2.__actions_cache_2;outcome=success;conclusion=success;duration_ms=719]
+2026-11-20T07:53:56.9968158Z ##[start-action display=Set up Wireit GitHub Actions caching;id=__self.__self_2.__google_wireit]
+2026-11-20T07:53:56.9983638Z ##[group]Run google/wireit@9d7c2e5346f8ef1b1ab6014c4e96c74e234f7ed5
+2026-11-20T07:53:56.9983846Z env:
+2026-11-20T07:53:56.9983972Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:56.9984145Z ##[endgroup]
+2026-11-20T07:53:57.0185187Z [main] Launching background custodian service
+2026-11-20T07:53:57.0189064Z [main] Writing logs to /tmp/wireit_custodian_logs_g5MJBJ
+2026-11-20T07:53:57.1217444Z 
+2026-11-20T07:53:57.1217912Z [custodian] Trying port 62098
+2026-11-20T07:53:57.1218248Z [custodian] Listening on port 62098
+2026-11-20T07:53:57.1218412Z 
+2026-11-20T07:53:57.1218522Z [main] Custodian server ready
+2026-11-20T07:53:57.1260940Z ##[end-action id=__self.__self_2.__google_wireit;outcome=success;conclusion=success;duration_ms=129]
+2026-11-20T07:53:57.1263667Z ##[end-action id=__self.__self_2;outcome=success;conclusion=success;duration_ms=4283]
+2026-11-20T07:53:57.1265111Z ##[start-action display=Install dependencies;id=__self.__run]
+2026-11-20T07:53:57.1274122Z ##[group]Run pnpm install --prefer-offline --frozen-lockfile
+2026-11-20T07:53:57.1274367Z [36;1mpnpm install --prefer-offline --frozen-lockfile[0m
+2026-11-20T07:53:57.1286468Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:53:57.1286664Z env:
+2026-11-20T07:53:57.1286796Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:57.1286950Z   WIREIT_CACHE: github
+2026-11-20T07:53:57.1287102Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:53:57.1287264Z ##[endgroup]
+2026-11-20T07:53:57.4492815Z Scope: all 8 workspace projects
+2026-11-20T07:53:57.4794508Z Lockfile is up to date, resolution step is skipped
+2026-11-20T07:53:57.5040985Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-11-20T07:53:57.5456255Z Packages: +899
+2026-11-20T07:53:57.5456545Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-20T07:53:58.4636605Z Progress: resolved 899, reused 894, downloaded 0, added 899, done
+2026-11-20T07:53:58.6224526Z .../node_modules/@swc/core postinstall$ node postinstall.js
+2026-11-20T07:53:58.6292902Z .../esbuild@0.27.7/node_modules/esbuild postinstall$ node install.js
+2026-11-20T07:53:58.6614018Z .../node_modules/@swc/core postinstall: Done
+2026-11-20T07:53:58.7360288Z .../esbuild@0.27.7/node_modules/esbuild postinstall: Done
+2026-11-20T07:53:58.8302167Z 
+2026-11-20T07:53:58.8302565Z devDependencies:
+2026-11-20T07:53:58.8302799Z + @eslint/compat 2.0.0
+2026-11-20T07:53:58.8303000Z + @eslint/eslintrc 3.3.5
+2026-11-20T07:53:58.8303152Z + @eslint/js 9.39.4
+2026-11-20T07:53:58.8303375Z + @types/node 26.1.0
+2026-11-20T07:53:58.8303509Z + eslint 9.39.4
+2026-11-20T07:53:58.8303719Z + eslint-config-prettier 10.1.8
+2026-11-20T07:53:58.8303892Z + eslint-plugin-lodash 8.0.0
+2026-11-20T07:53:58.8304075Z + eslint-plugin-playwright 2.4.0
+2026-11-20T07:53:58.8304249Z + eslint-plugin-prettier 5.5.4
+2026-11-20T07:53:58.8304414Z + eslint-plugin-react 7.37.5
+2026-11-20T07:53:58.8304599Z + eslint-plugin-react-compiler 19.1.0-rc.2
+2026-11-20T07:53:58.8304802Z + eslint-plugin-react-hooks 6.1.0
+2026-11-20T07:53:58.8304961Z + husky 9.1.7
+2026-11-20T07:53:58.8305093Z + lint-staged 16.4.0
+2026-11-20T07:53:58.8305223Z + prettier 3.6.2
+2026-11-20T07:53:58.8305344Z + tslib 2.8.1
+2026-11-20T07:53:58.8305827Z + typescript 5.9.3
+2026-11-20T07:53:58.8305967Z + typescript-eslint 8.42.0
+2026-11-20T07:53:58.8306104Z + wireit 0.15.0
+2026-11-20T07:53:58.8306180Z 
+2026-11-20T07:53:58.8392460Z . prepare$ cd .. && husky js/.husky
+2026-11-20T07:53:58.8829717Z . prepare: Done
+2026-11-20T07:53:58.9391111Z Done in 1.7s using pnpm v11.1.1
+2026-11-20T07:53:59.0731816Z ##[end-action id=__self.__run;outcome=success;conclusion=success;duration_ms=1946]
+2026-11-20T07:53:59.0896604Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-11-20T07:53:59.0897131Z with:
+2026-11-20T07:53:59.0897355Z   name: keycloak
+2026-11-20T07:53:59.0897556Z   merge-multiple: false
+2026-11-20T07:53:59.0897848Z   repository: boba-benchmarks/keycloak
+2026-11-20T07:53:59.0898160Z   run-id: 44697956683
+2026-11-20T07:53:59.0898291Z   skip-decompress: false
+2026-11-20T07:53:59.0898513Z   digest-mismatch: error
+2026-11-20T07:53:59.0898731Z env:
+2026-11-20T07:53:59.0899062Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:53:59.0899271Z   WIREIT_CACHE: github
+2026-11-20T07:53:59.0899490Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:53:59.0899773Z ##[endgroup]
+2026-11-20T07:53:59.2723987Z Downloading single artifact
+2026-11-20T07:53:59.4153036Z Preparing to download the following artifacts:
+2026-11-20T07:53:59.4154281Z - keycloak (ID: 14611512871, Size: 172486707, Expected Digest: sha256:5fa52161179925d41a1654c487a01b82930b70f6a92b10f0a34aa542fbad264f)
+2026-11-20T07:53:59.7179375Z Redirecting to blob download url: https://productionresultssa17.blob.core.windows.net/actions-results/7c2186ed-e6e0-4d4c-a5d6-ffa482f9f6d8/workflow-job-run-5844a687-d173-5ecf-8c03-78a99624e961/artifacts/d63f4a0cdaab52726d1ce895e4ac8c3507049e617b0a97d0a0af508bdad34a8d.zip
+2026-11-20T07:53:59.7180920Z Starting download of artifact to: /home/runner/work/keycloak/keycloak
+2026-11-20T07:54:00.2181251Z (node:2184) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-20T07:54:00.2182406Z (Use `node.boba --trace-deprecation ...` to show where the warning was created)
+2026-11-20T07:55:00.7255649Z SHA256 digest of downloaded artifact is 5fa52161179925d41a1654c487a01b82930b70f6a92b10f0a34aa542fbad264f
+2026-11-20T07:55:00.7256133Z Artifact download completed successfully.
+2026-11-20T07:55:00.7256435Z Total of 1 artifact(s) downloaded
+2026-11-20T07:55:00.7259942Z Download artifact has finished successfully
+2026-11-20T07:55:00.7451826Z Prepare all required actions
+2026-11-20T07:55:00.7452362Z Getting action download info
+2026-11-20T07:55:01.1079747Z Download action repository 'actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6' (SHA:de7274f081f381c8f8158605e0321c36c376e2e6)
+2026-11-20T07:55:01.5813216Z ##[group]Run ./.github/actions/java-setup
+2026-11-20T07:55:01.5813487Z with:
+2026-11-20T07:55:01.5813704Z   distribution: temurin
+2026-11-20T07:55:01.5813934Z   java-version: 25
+2026-11-20T07:55:01.5814143Z env:
+2026-11-20T07:55:01.5814335Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:55:01.5814589Z   WIREIT_CACHE: github
+2026-11-20T07:55:01.5814826Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:55:01.5815112Z ##[endgroup]
+2026-11-20T07:55:01.5818351Z ##[start-action display=Setup Java;id=__self_2.setup-java]
+2026-11-20T07:55:01.5869560Z ##[group]Run actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6
+2026-11-20T07:55:01.5869848Z with:
+2026-11-20T07:55:01.5870166Z   distribution: temurin
+2026-11-20T07:55:01.5870398Z   java-version: 25
+2026-11-20T07:55:01.5870619Z   java-package: jdk
+2026-11-20T07:55:01.5870886Z   check-latest: false
+2026-11-20T07:55:01.5871173Z   force-download: false
+2026-11-20T07:55:01.5871400Z   set-default: true
+2026-11-20T07:55:01.5871618Z   server-id: github
+2026-11-20T07:55:01.5871806Z   mvn-repositories-include-central: true
+2026-11-20T07:55:01.5872043Z   mvn-repositories-prioritize-central: true
+2026-11-20T07:55:01.5872317Z   overwrite-settings: true
+2026-11-20T07:55:01.5872666Z   cache-read-only: false
+2026-11-20T07:55:01.5872866Z   job-status: success
+2026-11-20T07:55:01.5874246Z   token: ***
+2026-11-20T07:55:01.5874435Z   show-download-progress: false
+2026-11-20T07:55:01.5874679Z   problem-matcher: true
+2026-11-20T07:55:01.5874829Z env:
+2026-11-20T07:55:01.5875026Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:55:01.5875248Z   WIREIT_CACHE: github
+2026-11-20T07:55:01.5875480Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:55:01.5875715Z ##[endgroup]
+2026-11-20T07:55:01.6355807Z ##[group]Installed distributions
+2026-11-20T07:55:01.6408114Z Resolved Java 25.0.5+8 from tool-cache
+2026-11-20T07:55:01.6408356Z Setting Java 25.0.5+8 as the default
+2026-11-20T07:55:01.6412537Z 
+2026-11-20T07:55:01.6412673Z Java configuration:
+2026-11-20T07:55:01.6412880Z   Distribution: temurin
+2026-11-20T07:55:01.6413049Z   Version: 25.0.5+8
+2026-11-20T07:55:01.6413279Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:01.6413472Z 
+2026-11-20T07:55:01.6413637Z ##[endgroup]
+2026-11-20T07:55:01.6423983Z Creating settings.xml with server-id: github
+2026-11-20T07:55:01.6426855Z Creating toolchains.xml for JDK version 25 from temurin
+2026-11-20T07:55:01.6428638Z Writing to /home/runner/.m2/settings.xml
+2026-11-20T07:55:01.6442028Z Writing to /home/runner/.m2/toolchains.xml
+2026-11-20T07:55:01.6446370Z Configured MAVEN_ARGS to include -ntp to suppress Maven transfer progress logs. Set 'show-download-progress: true' to keep the download progress output.
+2026-11-20T07:55:01.6509342Z ##[end-action id=__self_2.setup-java;outcome=success;conclusion=success;duration_ms=69]
+2026-11-20T07:55:01.6510925Z ##[start-action display=Configure Maven for CI;id=__self_2.__run]
+2026-11-20T07:55:01.6522522Z ##[group]Run # -B: batch mode, -nsu: don't check for snapshot updates
+2026-11-20T07:55:01.6522896Z [36;1m# -B: batch mode, -nsu: don't check for snapshot updates[0m
+2026-11-20T07:55:01.6523145Z [36;1margs="-B -nsu"[0m
+2026-11-20T07:55:01.6523428Z [36;1m# HTTP transport settings for Maven Resolver 1.9.x (Maven 3.9.x); Maven 4 uses aether.transport.http.* instead.[0m
+2026-11-20T07:55:01.6523970Z [36;1m# Drop pooled connections after 25 seconds (default: 300), as GitHub runners kept reusing connections that were already closed (https://github.com/keycloak/keycloak/pull/22946).[0m
+2026-11-20T07:55:01.6524563Z [36;1margs="$args -Daether.connector.http.connectionMaxTtl=25"[0m
+2026-11-20T07:55:01.6525292Z [36;1m# Retry failed downloads up to 5 times (default: 3), as Maven Central occasionally fails a single artifact with a transient error.[0m
+2026-11-20T07:55:01.6525752Z [36;1margs="$args -Daether.connector.http.retryHandler.count=5"[0m
+2026-11-20T07:55:01.6526159Z [36;1m# By default only 429 and 503 are retried with a back-off; add 502 (Bad Gateway) and 504 (Gateway Timeout).[0m
+2026-11-20T07:55:01.6526721Z [36;1m# See https://github.com/apache/maven-resolver/issues/2151 for a request to make this configurable and to cover more status codes.[0m
+2026-11-20T07:55:01.6527201Z [36;1margs="$args -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504"[0m
+2026-11-20T07:55:01.6527478Z [36;1mecho "MAVEN_ARGS=$args" >> "$GITHUB_ENV"[0m
+2026-11-20T07:55:01.6547224Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:55:01.6547554Z env:
+2026-11-20T07:55:01.6547789Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:55:01.6567969Z   WIREIT_CACHE: github
+2026-11-20T07:55:01.6568278Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:55:01.6568670Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:01.6569044Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:01.6569351Z   MAVEN_ARGS: -ntp
+2026-11-20T07:55:01.6569715Z ##[endgroup]
+2026-11-20T07:55:01.6608760Z ##[end-action id=__self_2.__run;outcome=success;conclusion=success;duration_ms=9]
+2026-11-20T07:55:01.6626225Z ##[group]Run tar xfvz keycloak-999.0.0-SNAPSHOT.tar.gz
+2026-11-20T07:55:01.6626688Z [36;1mtar xfvz keycloak-999.0.0-SNAPSHOT.tar.gz[0m
+2026-11-20T07:55:01.6627329Z [36;1mkeycloak-999.0.0-SNAPSHOT/bin/kc.sh start-dev --features=admin-fine-grained-authz:v2,transient-users,spiffe,oid4vc-vci,oid4vc-mdoc,kubernetes-service-accounts,jwt-authorization-grant,workflows,ssf,resource-indicators &> ~/server.log &[0m
+2026-11-20T07:55:01.6637988Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:55:01.6638259Z env:
+2026-11-20T07:55:01.6638491Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:55:01.6638733Z   WIREIT_CACHE: github
+2026-11-20T07:55:01.6638904Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:55:01.6639203Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:01.6639597Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:01.6640274Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-20T07:55:01.6640734Z   KC_BOOTSTRAP_ADMIN_USERNAME: admin
+2026-11-20T07:55:01.6640959Z   KC_BOOTSTRAP_ADMIN_PASSWORD: admin
+2026-11-20T07:55:01.6641223Z   KC_BOOTSTRAP_ADMIN_CLIENT_ID: temporary-admin-service
+2026-11-20T07:55:01.6641512Z   KC_BOOTSTRAP_ADMIN_CLIENT_SECRET: temporary-admin-service
+2026-11-20T07:55:01.6641799Z ##[endgroup]
+2026-11-20T07:55:01.6702363Z keycloak-999.0.0-SNAPSHOT/version.txt
+2026-11-20T07:55:01.6702958Z keycloak-999.0.0-SNAPSHOT/conf/cache-ispn.xml
+2026-11-20T07:55:01.6703578Z keycloak-999.0.0-SNAPSHOT/README.md
+2026-11-20T07:55:01.6703782Z keycloak-999.0.0-SNAPSHOT/themes/README.md
+2026-11-20T07:55:01.6704357Z keycloak-999.0.0-SNAPSHOT/bin/kc.sh
+2026-11-20T07:55:01.6704826Z keycloak-999.0.0-SNAPSHOT/bin/federation-sssd-setup.sh
+2026-11-20T07:55:01.6705046Z keycloak-999.0.0-SNAPSHOT/bin/kc.bat
+2026-11-20T07:55:01.6706725Z keycloak-999.0.0-SNAPSHOT/bin/
+2026-11-20T07:55:01.6706907Z keycloak-999.0.0-SNAPSHOT/bin/client/
+2026-11-20T07:55:01.6707108Z keycloak-999.0.0-SNAPSHOT/bin/client/lib/
+2026-11-20T07:55:01.6707299Z keycloak-999.0.0-SNAPSHOT/bin/kcadm.sh
+2026-11-20T07:55:01.6707590Z keycloak-999.0.0-SNAPSHOT/bin/client/lib/keycloak-crypto-fips1402-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.6707964Z keycloak-999.0.0-SNAPSHOT/bin/client/lib/keycloak-crypto-default-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.6709826Z keycloak-999.0.0-SNAPSHOT/bin/client/lib/bcprov-jdk18on-1.86.jar
+2026-11-20T07:55:01.6975788Z keycloak-999.0.0-SNAPSHOT/bin/client/keycloak-admin-cli-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.7271699Z keycloak-999.0.0-SNAPSHOT/bin/kcadm.bat
+2026-11-20T07:55:01.7272398Z keycloak-999.0.0-SNAPSHOT/bin/kcreg.sh
+2026-11-20T07:55:01.7273027Z keycloak-999.0.0-SNAPSHOT/bin/kcreg.bat
+2026-11-20T07:55:01.7273311Z keycloak-999.0.0-SNAPSHOT/providers/README.md
+2026-11-20T07:55:01.7273602Z keycloak-999.0.0-SNAPSHOT/lib/
+2026-11-20T07:55:01.7273891Z keycloak-999.0.0-SNAPSHOT/lib/quarkus/
+2026-11-20T07:55:01.7274164Z keycloak-999.0.0-SNAPSHOT/lib/lib/
+2026-11-20T07:55:01.7274431Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/
+2026-11-20T07:55:01.7274700Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/
+2026-11-20T07:55:01.7274990Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/
+2026-11-20T07:55:01.7275276Z keycloak-999.0.0-SNAPSHOT/lib/app/
+2026-11-20T07:55:01.7275615Z keycloak-999.0.0-SNAPSHOT/lib/quarkus/transformed-bytecode.jar
+2026-11-20T07:55:01.7304028Z keycloak-999.0.0-SNAPSHOT/lib/quarkus/quarkus-application.dat
+2026-11-20T07:55:01.7317128Z keycloak-999.0.0-SNAPSHOT/lib/quarkus/generated-bytecode.jar
+2026-11-20T07:55:01.7432207Z keycloak-999.0.0-SNAPSHOT/lib/quarkus/build-system.properties
+2026-11-20T07:55:01.7432764Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.module.jackson-module-jakarta-xmlbind-annotations-2.21.8.jar
+2026-11-20T07:55:01.7434291Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-context-propagation-storage-2.3.0.jar
+2026-11-20T07:55:01.7434709Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jspecify.jspecify-1.0.0.jar
+2026-11-20T07:55:01.7435234Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-api-incubator-1.62.0-alpha.jar
+2026-11-20T07:55:01.7436806Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-config-api-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.7440461Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.microprofile.openapi.microprofile-openapi-api-4.1.1.jar
+2026-11-20T07:55:01.7444073Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.ow2.asm.asm-commons-9.10.1.jar
+2026-11-20T07:55:01.7447916Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-arc-3.40.1.2.jar
+2026-11-20T07:55:01.7450417Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-netty-1.81.0.jar
+2026-11-20T07:55:01.7462341Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.webauthn4j.webauthn4j-core-0.30.3.RELEASE.jar
+2026-11-20T07:55:01.7484378Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-resolver-dns-4.1.139.Final.jar
+2026-11-20T07:55:01.7492457Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.snakeyaml.snakeyaml-engine-2.6.jar
+2026-11-20T07:55:01.7502231Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-websockets-next-spi-3.40.1.2.jar
+2026-11-20T07:55:01.7503411Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.prometheus.simpleclient_tracer_otel_agent-0.16.0.jar
+2026-11-20T07:55:01.7504046Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-account-ui-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.7601164Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-smallrye-context-propagation-3.40.1.2.jar
+2026-11-20T07:55:01.7602122Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-health-4.3.0.jar
+2026-11-20T07:55:01.7603281Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-core-1.81.0.jar
+2026-11-20T07:55:01.7630479Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-gssapi-2.9.2.SP1.jar
+2026-11-20T07:55:01.7631182Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-web-common-3.23.1.jar
+2026-11-20T07:55:01.7632072Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-admin-v2-api-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.7632972Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-context-propagation-api-2.3.0.jar
+2026-11-20T07:55:01.7633529Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-themes-vendor-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.8032026Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.persistence.jakarta.persistence-api-3.2.0.jar
+2026-11-20T07:55:01.8039303Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-bridge-common-4.5.35.jar
+2026-11-20T07:55:01.8039835Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.orm.hibernate-graalvm-7.4.9.Final.jar
+2026-11-20T07:55:01.8040269Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.locationtech.jts.jts-core-1.19.0.jar
+2026-11-20T07:55:01.8084061Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.guava.guava-33.6.0-jre.jar
+2026-11-20T07:55:01.8202777Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.commons.commons-collections4-4.5.0.jar
+2026-11-20T07:55:01.8236391Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.micrometer.micrometer-observation-1.17.1.jar
+2026-11-20T07:55:01.8239981Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-context-1.62.0.jar
+2026-11-20T07:55:01.8241267Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.angus.angus-activation-2.0.3.jar
+2026-11-20T07:55:01.8242414Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-api-1.62.0.jar
+2026-11-20T07:55:01.8248572Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.glassfish.jaxb.jaxb-runtime-4.0.9.jar
+2026-11-20T07:55:01.8284531Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.googlecode.owasp-java-html-sanitizer.java10-shim-20260101.1.jar
+2026-11-20T07:55:01.8285156Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.commons.commons-lang3-3.20.0.jar
+2026-11-20T07:55:01.8313081Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-logging-json-3.40.1.2.jar
+2026-11-20T07:55:01.8314327Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-exporter-otlp-1.62.0.jar
+2026-11-20T07:55:01.8316446Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-hibernate-orm-3.40.1.2.jar
+2026-11-20T07:55:01.8328833Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.bouncycastle.bcutil-jdk18on-1.86.jar
+2026-11-20T07:55:01.8358957Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-core-16.0.15.jar
+2026-11-20T07:55:01.8594499Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-password-impl-2.9.2.SP1.jar
+2026-11-20T07:55:01.8597229Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-tls-registry-3.40.1.2.jar
+2026-11-20T07:55:01.8602840Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.common.smallrye-common-search-2.19.0.jar
+2026-11-20T07:55:01.8603233Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-util-1.81.0.jar
+2026-11-20T07:55:01.8608822Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.setl.rdf-urdna-1.1.jar
+2026-11-20T07:55:01.8609186Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-virtual-threads-3.40.1.2.jar
+2026-11-20T07:55:01.8609729Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.dataformat.jackson-dataformat-yaml-2.21.8.jar
+2026-11-20T07:55:01.8612059Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-context-propagation-2.3.0.jar
+2026-11-20T07:55:01.8616766Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-multimap-16.0.15.jar
+2026-11-20T07:55:01.8627177Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.angus.angus-mail-2.0.5.jar
+2026-11-20T07:55:01.8645458Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-gs2-2.9.2.SP1.jar
+2026-11-20T07:55:01.8650806Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-grpc-common-4.5.35.jar
+2026-11-20T07:55:01.8651423Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-runtime-3.23.1.jar
+2026-11-20T07:55:01.8652119Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.openjdk.nashorn.nashorn-core-15.4.jar
+2026-11-20T07:55:01.8733631Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.httpcomponents.httpcore-4.4.16.jar
+2026-11-20T07:55:01.8747926Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-vertx-3.40.1.2.jar
+2026-11-20T07:55:01.8754947Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-resolver-4.1.139.Final.jar
+2026-11-20T07:55:01.8757283Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-stub-1.81.0.jar
+2026-11-20T07:55:01.8760948Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.dataformat.jackson-dataformat-cbor-2.21.8.jar
+2026-11-20T07:55:01.8764574Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.yaml.snakeyaml-2.0.jar
+2026-11-20T07:55:01.8778727Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-rest-jackson-3.40.1.2.jar
+2026-11-20T07:55:01.8781923Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.semconv.opentelemetry-semconv-1.41.1.jar
+2026-11-20T07:55:01.8782488Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-model-infinispan-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.8833677Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-4.1.139.Final.jar
+2026-11-20T07:55:01.8848498Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-context-propagation-jta-2.3.0.jar
+2026-11-20T07:55:01.8848979Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.config.smallrye-config-common-3.17.2.jar
+2026-11-20T07:55:01.8849392Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.resource.jakarta.resource-api-2.1.0.jar
+2026-11-20T07:55:01.8851446Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.googlecode.owasp-java-html-sanitizer.java8-shim-20260101.1.jar
+2026-11-20T07:55:01.8851898Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-health-provided-checks-4.3.0.jar
+2026-11-20T07:55:01.8852949Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.micrometer.micrometer-commons-1.17.1.jar
+2026-11-20T07:55:01.8854059Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-kerberos-federation-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.8855190Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-runtime-telemetry-2.28.1-alpha.jar
+2026-11-20T07:55:01.8858911Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-http-4.1.139.Final.jar
+2026-11-20T07:55:01.8886389Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.logging.commons-logging-jboss-logging-2.0.0.Final.jar
+2026-11-20T07:55:01.8887066Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-keystore-2.9.2.SP1.jar
+2026-11-20T07:55:01.8888548Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-devservices-3.40.1.2.jar
+2026-11-20T07:55:01.8889113Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.narayana.jta.narayana-jta-7.3.4.Final.jar
+2026-11-20T07:55:01.8951365Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-http2-4.1.139.Final.jar
+2026-11-20T07:55:01.8971750Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-fs-util-1.4.2.jar
+2026-11-20T07:55:01.8974445Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-model-storage-private-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.8985275Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.webauthn4j.webauthn4j-util-0.30.3.RELEASE.jar
+2026-11-20T07:55:01.8985672Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.xml.soap.jakarta.xml.soap-api-3.0.0.jar
+2026-11-20T07:55:01.8986459Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-hibernate-validator-3.40.1.2.jar
+2026-11-20T07:55:01.8989328Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.mutiny-smallrye-context-propagation-3.3.0.jar
+2026-11-20T07:55:01.8990213Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-credential-2.9.2.SP1.jar
+2026-11-20T07:55:01.8995476Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.datatype.jackson-datatype-jsr310-2.21.8.jar
+2026-11-20T07:55:01.9000627Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.transaction.jakarta.transaction-api-2.0.1.jar
+2026-11-20T07:55:01.9001734Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.apicatalog.titanium-json-ld-1.3.3.jar
+2026-11-20T07:55:01.9013382Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-datasource-3.40.1.2.jar
+2026-11-20T07:55:01.9014597Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.annotation.jakarta.annotation-api-3.0.0.jar
+2026-11-20T07:55:01.9015364Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-buffer-4.1.139.Final.jar
+2026-11-20T07:55:01.9029327Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-trace-1.62.0.jar
+2026-11-20T07:55:01.9034363Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-services-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.9232666Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-transaction-annotations-3.40.1.2.jar
+2026-11-20T07:55:01.9233315Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-swagger-ui-3.40.1.2.jar
+2026-11-20T07:55:01.9233952Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-transport-native-epoll-4.1.139.Final-linux-x86_64.jar
+2026-11-20T07:55:01.9234638Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/javax.cache.cache-api-1.1.1.jar
+2026-11-20T07:55:01.9237688Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jgroups.jgroups-5.5.5.Final.jar
+2026-11-20T07:55:01.9342258Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-vertx-http-3.40.1.2.jar
+2026-11-20T07:55:01.9369229Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.xml.bind.jakarta.xml.bind-api-4.0.5.jar
+2026-11-20T07:55:01.9374144Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.protobuf.protobuf-java-4.35.0.jar
+2026-11-20T07:55:01.9445463Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-mariadb-3.40.1.2.jar
+2026-11-20T07:55:01.9446322Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.jakarta.rs.jackson-jakarta-rs-base-2.21.8.jar
+2026-11-20T07:55:01.9447700Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.googlecode.owasp-java-html-sanitizer.owasp-java-html-sanitizer-20260101.1.jar
+2026-11-20T07:55:01.9456861Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-admin-v2-services-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.9463176Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.antlr.antlr4-runtime-4.13.2.jar
+2026-11-20T07:55:01.9475498Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.agroal.agroal-api-3.2.1.jar
+2026-11-20T07:55:01.9477982Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-smallrye-health-3.40.1.2.jar
+2026-11-20T07:55:01.9479099Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.prometheus.simpleclient-0.16.0.jar
+2026-11-20T07:55:01.9482920Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-counter-api-16.0.15.jar
+2026-11-20T07:55:01.9484023Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-http-2.9.2.SP1.jar
+2026-11-20T07:55:01.9485462Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-digest-2.9.2.SP1.jar
+2026-11-20T07:55:01.9486546Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.osgi.org.osgi.util.function-1.0.0.jar
+2026-11-20T07:55:01.9487155Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.slf4j.slf4j-jboss-logmanager-2.0.2.Final.jar
+2026-11-20T07:55:01.9487942Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-saml-core-public-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.9496644Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-1.62.0.jar
+2026-11-20T07:55:01.9497728Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.microprofile.health.microprofile-health-api-4.0.1.jar
+2026-11-20T07:55:01.9498130Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-web-client-4.5.35.jar
+2026-11-20T07:55:01.9502897Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.inject.jakarta.inject-api-2.0.1.jar
+2026-11-20T07:55:01.9503257Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.threads.jboss-threads-3.9.2.jar
+2026-11-20T07:55:01.9509106Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-util-2.9.2.SP1.jar
+2026-11-20T07:55:01.9510131Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.h2database.h2-2.4.240.jar
+2026-11-20T07:55:01.9611712Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-ldap-federation-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.9624656Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.prometheus.simpleclient_common-0.16.0.jar
+2026-11-20T07:55:01.9625614Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.enterprise.jakarta.enterprise.cdi-api-4.1.0.jar
+2026-11-20T07:55:01.9630569Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.orm.hibernate-jcache-7.4.9.Final.jar
+2026-11-20T07:55:01.9631516Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.santuario.xmlsec-3.0.6.jar
+2026-11-20T07:55:01.9677196Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-netty-3.40.1.2.jar
+2026-11-20T07:55:01.9680569Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-metrics-1.62.0.jar
+2026-11-20T07:55:01.9694135Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.mysql.mysql-connector-j-9.7.0.jar
+2026-11-20T07:55:01.9793238Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-model-storage-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.9795392Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-oauth2-2.9.2.SP1.jar
+2026-11-20T07:55:01.9795803Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.bouncycastle.bcpkix-jdk18on-1.86.jar
+2026-11-20T07:55:01.9848247Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-core-4.5.35.jar
+2026-11-20T07:55:01.9914182Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-quarkus-server-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.9934112Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-core-3.23.1.jar
+2026-11-20T07:55:01.9946520Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.enterprise.jakarta.enterprise.lang-model-4.1.0.jar
+2026-11-20T07:55:01.9946947Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.perfmark.perfmark-api-0.27.0.jar
+2026-11-20T07:55:01.9947392Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-ipatuura-federation-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:01.9948580Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-rest-jackson-common-3.40.1.2.jar
+2026-11-20T07:55:01.9949464Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.api.grpc.proto-google-common-protos-2.71.0.jar
+2026-11-20T07:55:02.0060563Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-agroal-3.40.1.2.jar
+2026-11-20T07:55:02.0062765Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-model-jpa-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.0104245Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-ssf-core-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.0107080Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-web-4.5.35.jar
+2026-11-20T07:55:02.0120819Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-caffeine-3.40.1.2.jar
+2026-11-20T07:55:02.0121640Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-sssd-federation-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.0147543Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-mutiny-3.40.1.2.jar
+2026-11-20T07:55:02.0147992Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-transport-classes-epoll-4.1.139.Final.jar
+2026-11-20T07:55:02.0154230Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-asn1-2.9.2.SP1.jar
+2026-11-20T07:55:02.0155328Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.liquibase.liquibase-core-4.33.0.jar
+2026-11-20T07:55:02.0279627Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jvnet.staxex.stax-ex-2.0.1.jar
+2026-11-20T07:55:02.0281385Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.agroal.agroal-pool-3.2.1.jar
+2026-11-20T07:55:02.0287964Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.reactivex.rxjava3.rxjava-3.1.12.jar
+2026-11-20T07:55:02.0397248Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.config.smallrye-config-core-3.17.2.jar
+2026-11-20T07:55:02.0413797Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-auth-2.9.2.SP1.jar
+2026-11-20T07:55:02.0414213Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.postgresql.postgresql-42.7.13.jar
+2026-11-20T07:55:02.0468748Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-grpc-4.5.35.jar
+2026-11-20T07:55:02.0469807Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.errorprone.error_prone_annotations-2.49.0.jar
+2026-11-20T07:55:02.0470237Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-rest-3.40.1.2.jar
+2026-11-20T07:55:02.0477378Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-saml-core-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.0502104Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.latencyutils.LatencyUtils-2.0.3.jar
+2026-11-20T07:55:02.0503280Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jackson-3.40.1.2.jar
+2026-11-20T07:55:02.0504755Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-server-spi-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.0520223Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-plain-2.9.2.SP1.jar
+2026-11-20T07:55:02.0520713Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-ssf-transmitter-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.0531684Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.ow2.asm.asm-analysis-9.10.1.jar
+2026-11-20T07:55:02.0533556Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.osgi.org.osgi.util.promise-1.0.0.jar
+2026-11-20T07:55:02.0535781Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.validator.hibernate-validator-9.1.5.Final.jar
+2026-11-20T07:55:02.0596915Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.jboss-transaction-spi-8.0.0.Final.jar
+2026-11-20T07:55:02.0597783Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-provider-util-2.9.2.SP1.jar
+2026-11-20T07:55:02.0598511Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.protostream.protostream-types-6.0.7.jar
+2026-11-20T07:55:02.0605247Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-base-2.9.2.SP1.jar
+2026-11-20T07:55:02.0606331Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-api-16.0.15.jar
+2026-11-20T07:55:02.0612384Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-tcnative-classes-2.0.84.Final.jar
+2026-11-20T07:55:02.0613997Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-bridge-common-3.23.1.jar
+2026-11-20T07:55:02.0614511Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.zxing.core-3.4.0.jar
+2026-11-20T07:55:02.0638867Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.config.smallrye-config-source-keystore-3.17.2.jar
+2026-11-20T07:55:02.0639266Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.github.hypfvieh.dbus-java-core-5.2.0.jar
+2026-11-20T07:55:02.0656578Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.core.jackson-core-2.21.8.jar
+2026-11-20T07:55:02.0682759Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-web-common-4.5.35.jar
+2026-11-20T07:55:02.0684776Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.bouncycastle.bcprov-jdk18on-1.86.jar
+2026-11-20T07:55:02.0954238Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-micrometer-1.5-2.28.1-alpha.jar
+2026-11-20T07:55:02.0957417Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.semconv.opentelemetry-semconv-incubating-1.40.0-alpha.jar
+2026-11-20T07:55:02.0962287Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.slf4j.slf4j-api-2.0.18.jar
+2026-11-20T07:55:02.0965686Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-2.9.2.SP1.jar
+2026-11-20T07:55:02.0971620Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-common-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.0979368Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-security-runtime-spi-3.40.1.2.jar
+2026-11-20T07:55:02.0980245Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.osgi.osgi.annotation-8.1.0.jar
+2026-11-20T07:55:02.0981689Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.sun.istack.istack-commons-runtime-3.0.10.jar
+2026-11-20T07:55:02.0983080Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-instrumentation-annotations-2.28.1.jar
+2026-11-20T07:55:02.0983527Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jctools.jctools-core-4.0.5.jar
+2026-11-20T07:55:02.1001645Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-mechanism-oauth2-2.9.2.SP1.jar
+2026-11-20T07:55:02.1002256Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-haproxy-4.1.139.Final.jar
+2026-11-20T07:55:02.1003687Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-fault-tolerance-vertx-6.11.4.jar
+2026-11-20T07:55:02.1005307Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.orm.hibernate-core-7.4.9.Final.jar
+2026-11-20T07:55:02.1583032Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-smallrye-openapi-3.40.1.2.jar
+2026-11-20T07:55:02.1585529Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.osgi.org.osgi.namespace.extender-1.0.1.jar
+2026-11-20T07:55:02.1586059Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.el.jakarta.el-api-6.0.1.jar
+2026-11-20T07:55:02.1589324Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/net.java.dev.jna.jna-5.8.0.jar
+2026-11-20T07:55:02.1651262Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.typesafe.config-1.4.7.jar
+2026-11-20T07:55:02.1662014Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-h2-3.40.1.2.jar
+2026-11-20T07:55:02.1662396Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/commons-codec.commons-codec-1.22.1.jar
+2026-11-20T07:55:02.1678120Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-protobuf-1.81.0.jar
+2026-11-20T07:55:02.1678562Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-transport-native-unix-common-4.1.139.Final.jar
+2026-11-20T07:55:02.1680064Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.httpcomponents.httpclient-4.5.14.jar
+2026-11-20T07:55:02.1710197Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-grpc-common-3.40.1.2.jar
+2026-11-20T07:55:02.1710643Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-rest-admin-ui-ext-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.1712580Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-instrumentation-api-2.28.1.jar
+2026-11-20T07:55:02.1722854Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.resteasy.reactive.resteasy-reactive-vertx-3.40.1.2.jar
+2026-11-20T07:55:02.1724425Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-cachestore-remote-16.0.15.jar
+2026-11-20T07:55:02.1730769Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-scram-2.9.2.SP1.jar
+2026-11-20T07:55:02.1731251Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-micrometer-opentelemetry-3.40.1.2.jar
+2026-11-20T07:55:02.1731709Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-x500-cert-util-2.9.2.SP1.jar
+2026-11-20T07:55:02.1732167Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-opentelemetry-3.40.1.2.jar
+2026-11-20T07:55:02.1744443Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-themes-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.1838746Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-external-2.9.2.SP1.jar
+2026-11-20T07:55:02.1839543Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-extension-autoconfigure-spi-1.62.0.jar
+2026-11-20T07:55:02.1840314Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-mechanism-gssapi-2.9.2.SP1.jar
+2026-11-20T07:55:02.1840895Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.classmate-1.7.1.jar
+2026-11-20T07:55:02.1842019Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-codegen-4.5.35.jar
+2026-11-20T07:55:02.1850840Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.interceptor.jakarta.interceptor-api-2.2.0.jar
+2026-11-20T07:55:02.1851544Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-reactive-converter-api-3.0.3.jar
+2026-11-20T07:55:02.1852182Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.resteasy.reactive.resteasy-reactive-common-types-3.40.1.2.jar
+2026-11-20T07:55:02.1852678Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.protostream.protostream-6.0.7.jar
+2026-11-20T07:55:02.1873470Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.agroal.agroal-narayana-3.2.1.jar
+2026-11-20T07:55:02.1874107Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-instrumentation-api-incubator-2.28.1-alpha.jar
+2026-11-20T07:55:02.1883487Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-x500-2.9.2.SP1.jar
+2026-11-20T07:55:02.1884034Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.twitter4j.twitter4j-core-4.1.2.jar
+2026-11-20T07:55:02.1897130Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.resteasy.reactive.resteasy-reactive-3.40.1.2.jar
+2026-11-20T07:55:02.1918520Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.activation.jakarta.activation-api-2.1.4.jar
+2026-11-20T07:55:02.1921158Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-uri-template-3.23.1.jar
+2026-11-20T07:55:02.1921718Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-context-1.81.0.jar
+2026-11-20T07:55:02.1922201Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-socks-4.1.139.Final.jar
+2026-11-20T07:55:02.1926673Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-tls-registry-spi-3.40.1.2.jar
+2026-11-20T07:55:02.1927144Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-crypto-fips1402-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.1928355Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.freemarker.freemarker-2.3.35.jar
+2026-11-20T07:55:02.1999750Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.prometheus.simpleclient_tracer_otel-0.16.0.jar
+2026-11-20T07:55:02.2000209Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-x500-cert-2.9.2.SP1.jar
+2026-11-20T07:55:02.2002056Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-jdbc-2.28.1-alpha.jar
+2026-11-20T07:55:02.2006075Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.micrometer.micrometer-core-1.17.1.jar
+2026-11-20T07:55:02.2041282Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.common.smallrye-common-vertx-context-2.19.0.jar
+2026-11-20T07:55:02.2042041Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-transport-native-epoll-4.1.139.Final-linux-aarch_64.jar
+2026-11-20T07:55:02.2043330Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-core-3.40.1.2.jar
+2026-11-20T07:55:02.2063040Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-commons-16.0.15.jar
+2026-11-20T07:55:02.2096327Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-micrometer-registry-prometheus-3.40.1.2.jar
+2026-11-20T07:55:02.2096756Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.prometheus.simpleclient_tracer_common-0.16.0.jar
+2026-11-20T07:55:02.2097127Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-mysql-3.40.1.2.jar
+2026-11-20T07:55:02.2097534Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.certs.smallrye-private-key-pem-parser-0.9.4.jar
+2026-11-20T07:55:02.2098532Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.orm.hibernate-community-dialects-7.4.9.Final.jar
+2026-11-20T07:55:02.2131889Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-protobuf-lite-1.81.0.jar
+2026-11-20T07:55:02.2132478Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.core.jackson-databind-2.21.8.jar
+2026-11-20T07:55:02.2198171Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.microprofile.config.microprofile-config-api-3.1.1.jar
+2026-11-20T07:55:02.2201592Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.vertx.utils.quarkus-vertx-utils-3.40.1.2.jar
+2026-11-20T07:55:02.2202689Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-mechanism-digest-2.9.2.SP1.jar
+2026-11-20T07:55:02.2203127Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-admin-ui-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.2436725Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/commons-io.commons-io-2.22.0.jar
+2026-11-20T07:55:02.2463638Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.osgi.org.osgi.service.component.annotations-1.5.1.jar
+2026-11-20T07:55:02.2464966Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.common.smallrye-common-classloader-2.19.0.jar
+2026-11-20T07:55:02.2466015Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-credentials-3.40.1.2.jar
+2026-11-20T07:55:02.2466580Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-dns-4.1.139.Final.jar
+2026-11-20T07:55:02.2469450Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-model-storage-services-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.2472309Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.models.hibernate-models-1.1.2.jar
+2026-11-20T07:55:02.2482557Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.github.hypfvieh.dbus-java-transport-native-unixsocket-5.2.0.jar
+2026-11-20T07:55:02.2483096Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-extension-autoconfigure-1.62.0.jar
+2026-11-20T07:55:02.2483645Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-reactive-converter-mutiny-3.0.3.jar
+2026-11-20T07:55:02.2485159Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.resteasy.reactive.resteasy-reactive-common-3.40.1.2.jar
+2026-11-20T07:55:02.2499608Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.core.jackson-annotations-2.21.jar
+2026-11-20T07:55:02.2502212Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.ow2.asm.asm-util-9.10.1.jar
+2026-11-20T07:55:02.2506369Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.common.wildfly-common-1.5.4.Final-format-001.jar
+2026-11-20T07:55:02.2519023Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-grpc-server-4.5.35.jar
+2026-11-20T07:55:02.2520317Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-open-api-model-4.3.5.jar
+2026-11-20T07:55:02.2523299Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-apache-httpclient-4.3-2.28.1-alpha.jar
+2026-11-20T07:55:02.2523825Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-mssql-3.40.1.2.jar
+2026-11-20T07:55:02.2524213Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-common-1.62.0.jar
+2026-11-20T07:55:02.2526950Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.ow2.asm.asm-9.10.1.jar
+2026-11-20T07:55:02.2531824Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-authzen-services-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.2533191Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-scim-services-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.2534344Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-instrumentation-annotations-support-2.28.1-alpha.jar
+2026-11-20T07:55:02.2535484Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.github.ua-parser.uap-java-1.6.1.jar
+2026-11-20T07:55:02.2537669Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-micrometer-3.40.1.2.jar
+2026-11-20T07:55:02.2548580Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-mechanism-scram-2.9.2.SP1.jar
+2026-11-20T07:55:02.2549748Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.ow2.asm.asm-tree-9.10.1.jar
+2026-11-20T07:55:02.2551233Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-postgresql-3.40.1.2.jar
+2026-11-20T07:55:02.2552151Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-open-api-core-4.3.5.jar
+2026-11-20T07:55:02.2577280Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.validation.jakarta.validation-api-3.1.1.jar
+2026-11-20T07:55:02.2581326Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.code.gson.gson-2.14.0.jar
+2026-11-20T07:55:02.2595182Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-auth-server-2.9.2.SP1.jar
+2026-11-20T07:55:02.2604776Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-security-manager-action-2.9.2.SP1.jar
+2026-11-20T07:55:02.2605239Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-common-4.1.139.Final.jar
+2026-11-20T07:55:02.2633176Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.arc.arc-3.40.1.2.jar
+2026-11-20T07:55:02.2644990Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-uri-template-4.5.35.jar
+2026-11-20T07:55:02.2645760Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-ssf-services-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.2646398Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-common-1.62.0.jar
+2026-11-20T07:55:02.2647157Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.jandex-3.6.0.jar
+2026-11-20T07:55:02.2662848Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.opencsv.opencsv-5.11.2.jar
+2026-11-20T07:55:02.2672056Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-web-3.23.1.jar
+2026-11-20T07:55:02.2677821Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-scim-core-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.2682843Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.resteasy.reactive.resteasy-reactive-jackson-3.40.1.2.jar
+2026-11-20T07:55:02.2683345Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.module.jackson-module-parameter-names-2.21.8.jar
+2026-11-20T07:55:02.2683859Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-auth-common-3.23.1.jar
+2026-11-20T07:55:02.2685219Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.config.smallrye-config-3.17.2.jar
+2026-11-20T07:55:02.2686428Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.ws.rs.jakarta.ws.rs-api-3.1.0.jar
+2026-11-20T07:55:02.2692552Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-client-hotrod-16.0.15.jar
+2026-11-20T07:55:02.2723094Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.glassfish.jaxb.txw2-4.0.9.jar
+2026-11-20T07:55:02.2726628Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-exporter-otlp-common-1.62.0.jar
+2026-11-20T07:55:02.2734174Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-health-api-4.3.0.jar
+2026-11-20T07:55:02.2734985Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.glassfish.expressly.expressly-6.0.0.jar
+2026-11-20T07:55:02.2741638Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-narayana-jta-3.40.1.2.jar
+2026-11-20T07:55:02.2745293Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.mutiny-zero-flow-adapters-1.2.1.jar
+2026-11-20T07:55:02.2745711Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.common.smallrye-common-annotation-2.19.0.jar
+2026-11-20T07:55:02.2746308Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-server-spi-private-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.2783610Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.zxing.javase-3.4.0.jar
+2026-11-20T07:55:02.2785787Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.narayana.jts.narayana-jts-integration-7.3.4.Final.jar
+2026-11-20T07:55:02.2787377Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-transport-4.1.139.Final.jar
+2026-11-20T07:55:02.2807533Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.security.quarkus-security-2.3.2.jar
+2026-11-20T07:55:02.2808540Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-auth-common-4.5.35.jar
+2026-11-20T07:55:02.2813757Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hdrhistogram.HdrHistogram-2.2.2.jar
+2026-11-20T07:55:02.2821121Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-mechanism-2.9.2.SP1.jar
+2026-11-20T07:55:02.2822187Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-oracle-3.40.1.2.jar
+2026-11-20T07:55:02.2822561Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.sun.xml.messaging.saaj.saaj-impl-2.0.1.jar
+2026-11-20T07:55:02.2840962Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.github.ben-manes.caffeine.caffeine-3.2.4.jar
+2026-11-20T07:55:02.2879501Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.github.ben-manes.caffeine.jcache-3.2.4.jar
+2026-11-20T07:55:02.2883452Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.config.smallrye-config-validator-3.17.2.jar
+2026-11-20T07:55:02.2884144Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-exporter-common-1.62.0.jar
+2026-11-20T07:55:02.2889475Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.microprofile.context-propagation.microprofile-context-propagation-api-1.3.jar
+2026-11-20T07:55:02.2890015Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-api-1.81.0.jar
+2026-11-20T07:55:02.2903334Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-crypto-default-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.2905672Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.mail.jakarta.mail-api-2.1.1.jar
+2026-11-20T07:55:02.2915104Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.micrometer.micrometer-registry-prometheus-simpleclient-1.17.1.jar
+2026-11-20T07:55:02.2916130Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-handler-4.1.139.Final.jar
+2026-11-20T07:55:02.2939880Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.datatype.jackson-datatype-jdk8-2.21.8.jar
+2026-11-20T07:55:02.2940828Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.glassfish.jaxb.jaxb-core-4.0.9.jar
+2026-11-20T07:55:02.2946173Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.microsoft.sqlserver.mssql-jdbc-13.4.0.jre11.jar
+2026-11-20T07:55:02.3003796Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-authz-policy-common-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.3007611Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-handler-proxy-4.1.139.Final.jar
+2026-11-20T07:55:02.3008547Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-permission-2.9.2.SP1.jar
+2026-11-20T07:55:02.3011176Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.reactivestreams.reactive-streams-1.0.4.jar
+2026-11-20T07:55:02.3011859Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.jakarta.rs.jackson-jakarta-rs-yaml-provider-2.21.8.jar
+2026-11-20T07:55:02.3012481Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.mutiny-3.3.0.jar
+2026-11-20T07:55:02.3047794Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-scim-model-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.3050333Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-datasource-common-3.40.1.2.jar
+2026-11-20T07:55:02.3050918Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-core-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.3076257Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-rest-common-3.40.1.2.jar
+2026-11-20T07:55:02.3077058Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/info.picocli.picocli-4.7.7.jar
+2026-11-20T07:55:02.3093354Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.mariadb.jdbc.mariadb-java-client-3.5.10.jar
+2026-11-20T07:55:02.3123587Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-grpc-client-4.5.35.jar
+2026-11-20T07:55:02.3124491Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-logs-1.62.0.jar
+2026-11-20T07:55:02.3127188Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-ssl-2.9.2.SP1.jar
+2026-11-20T07:55:02.3134479Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jsonp-3.40.1.2.jar
+2026-11-20T07:55:02.3134843Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-os-2.19.0.jar
+2026-11-20T07:55:02.3135240Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-expression-2.19.0.jar
+2026-11-20T07:55:02.3135961Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-function-2.19.0.jar
+2026-11-20T07:55:02.3138148Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/org.crac.crac-1.5.0.jar
+2026-11-20T07:55:02.3138632Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-io-2.19.0.jar
+2026-11-20T07:55:02.3143269Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.quarkus.quarkus-development-mode-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3144874Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-net-2.19.0.jar
+2026-11-20T07:55:02.3146134Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-ref-2.19.0.jar
+2026-11-20T07:55:02.3146890Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.quarkus.quarkus-vertx-latebound-mdc-provider-3.40.1.2.jar
+2026-11-20T07:55:02.3147283Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/org.jboss.logging.jboss-logging-3.6.3.Final.jar
+2026-11-20T07:55:02.3149708Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-cpu-2.19.0.jar
+2026-11-20T07:55:02.3150465Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/org.jboss.logmanager.jboss-logmanager-3.2.2.Final.jar
+2026-11-20T07:55:02.3181053Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.quarkus.quarkus-bootstrap-runner-3.40.1.2.jar
+2026-11-20T07:55:02.3185195Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-constraint-2.19.0.jar
+2026-11-20T07:55:02.3187249Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.quarkus.quarkus-classloader-commons-3.40.1.2.jar
+2026-11-20T07:55:02.3188519Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.quarkus.quarkus-value-registry-3.40.1.2.jar
+2026-11-20T07:55:02.3188981Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/jakarta.json.jakarta.json-api-2.1.3.jar
+2026-11-20T07:55:02.3189333Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/org.eclipse.parsson.parsson-1.1.9.jar
+2026-11-20T07:55:02.3193642Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-virtual-threads-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3194131Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-devui-deployment-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3196505Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.aesh.aesh-3.18.2.jar
+2026-11-20T07:55:02.3221990Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-caffeine-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3222590Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.aesh.terminal-detect-3.18.1.jar
+2026-11-20T07:55:02.3223244Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jsonp-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3223790Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-grpc-common-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3224429Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-datasource-deployment-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3225279Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-tls-registry-deployment-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3225728Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-health-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3227128Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-logging-json-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3227607Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.common.smallrye-common-process-2.19.0.jar
+2026-11-20T07:55:02.3230130Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-mysql-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3230843Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-hibernate-validator-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3231253Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.http.quarkus-http-servlet-5.5.0.jar
+2026-11-20T07:55:02.3250843Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-arc-test-supplement-3.40.1.2.jar
+2026-11-20T07:55:02.3251482Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-vertx-deployment-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3252109Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-kubernetes-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3252737Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-hibernate-orm-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3261484Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-bootstrap-app-model-3.40.1.2.jar
+2026-11-20T07:55:02.3271988Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-server-spi-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3272457Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-avro-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3273023Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-resteasy-common-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3273511Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.gizmo.gizmo2-2.1.1.jar
+2026-11-20T07:55:02.3295265Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-credentials-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3295687Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-undertow-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3296473Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-vertx-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3298999Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-mutiny-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3299463Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.aesh.readline-api-3.18.1.jar
+2026-11-20T07:55:02.3300303Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-security-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3302069Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.smallrye-open-api-spring-4.3.5.jar
+2026-11-20T07:55:02.3302987Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jackson-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3303540Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.smallrye-open-api-ui-4.3.5.jar
+2026-11-20T07:55:02.3340841Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/jakarta.servlet.jakarta.servlet-api-6.0.0.jar
+2026-11-20T07:55:02.3354562Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-mariadb-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3354988Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-micrometer-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3357612Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-opentelemetry-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3359795Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/deployment-class-path.dat
+2026-11-20T07:55:02.3360671Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-datasource-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3361716Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-assistant-dev-3.40.1.2.jar
+2026-11-20T07:55:02.3362606Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-arc-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3375731Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-spi-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3376518Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-panache-hibernate-common-3.40.1.2.jar
+2026-11-20T07:55:02.3377007Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.keycloak.keycloak-quarkus-server-deployment-999.0.0-SNAPSHOT.jar
+2026-11-20T07:55:02.3378628Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-arc-test-supplement-decorator-3.40.1.2.jar
+2026-11-20T07:55:02.3379179Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/appmodel.dat
+2026-11-20T07:55:02.3380959Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jackson-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3381681Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.http.quarkus-http-core-5.5.0.jar
+2026-11-20T07:55:02.3417658Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-vertx-http-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3423311Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-context-propagation-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3424036Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-reactive-datasource-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3424685Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-assistant-deployment-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3425279Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.smallrye-health-ui-4.3.0.jar
+2026-11-20T07:55:02.3427349Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-health-dev-3.40.1.2.jar
+2026-11-20T07:55:02.3428248Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.apache.commons.commons-compress-1.28.0.jar
+2026-11-20T07:55:02.3470561Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.graalvm.sdk.word-25.0.4.1.jar
+2026-11-20T07:55:02.3471400Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/net.bytebuddy.byte-buddy-1.18.8.jar
+2026-11-20T07:55:02.3649083Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-common-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3649859Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.aesh.terminal-tty-3.18.1.jar
+2026-11-20T07:55:02.3657789Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-openapi-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3658369Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-micrometer-opentelemetry-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3658905Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-health-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3659311Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-agroal-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3659770Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-kubernetes-service-binding-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3660240Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-postgresql-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3660665Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3670668Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-hibernate-orm-deployment-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3671152Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-bootstrap-json-3.40.1.2.jar
+2026-11-20T07:55:02.3671572Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.smallrye-open-api-vertx-4.3.5.jar
+2026-11-20T07:55:02.3672000Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-narayana-jta-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3672440Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-mssql-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3672830Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.gizmo.gizmo-1.10.1.jar
+2026-11-20T07:55:02.3676258Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-builder-3.40.1.2.jar
+2026-11-20T07:55:02.3679691Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-core-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3745577Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/net.bytebuddy.byte-buddy-agent-1.18.8.jar
+2026-11-20T07:55:02.3755994Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.common.smallrye-common-resource-2.19.0.jar
+2026-11-20T07:55:02.3757336Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-h2-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3758148Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.resteasy.reactive.resteasy-reactive-common-processor-3.40.1.2.jar
+2026-11-20T07:55:02.3763214Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-agroal-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3764661Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-oracle-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3765596Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-class-change-agent-3.40.1.2.jar
+2026-11-20T07:55:02.3765986Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.graalvm.sdk.nativeimage-25.0.4.1.jar
+2026-11-20T07:55:02.3773043Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-panache-hibernate-common-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3774629Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.resteasy.reactive.resteasy-reactive-processor-3.40.1.2.jar
+2026-11-20T07:55:02.3779313Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.aesh.terminal-api-3.18.1.jar
+2026-11-20T07:55:02.3789190Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-hibernate-validator-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3790426Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-swagger-ui-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3791572Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-context-propagation-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3792487Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.http.quarkus-http-http-core-5.5.0.jar
+2026-11-20T07:55:02.3793997Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-openapi-common-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3794808Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.jandex-gizmo2-3.6.0.jar
+2026-11-20T07:55:02.3795501Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jaxrs-spi-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3796236Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-openapi-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3799783Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-micrometer-registry-prometheus-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3800247Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-netty-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3801115Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.smallrye-open-api-jaxrs-4.3.5.jar
+2026-11-20T07:55:02.3802560Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-bootstrap-core-3.40.1.2.jar
+2026-11-20T07:55:02.3807628Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.classfile.jdk-classfile-backport-26.jar
+2026-11-20T07:55:02.3846081Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-jackson-common-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3846879Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-panache-common-3.40.1.2.jar
+2026-11-20T07:55:02.3847871Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-resteasy-server-common-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3848444Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-openapi-dev-3.40.1.2.jar
+2026-11-20T07:55:02.3848877Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-jackson-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3849833Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.aesh.readline-3.18.1.jar
+2026-11-20T07:55:02.3858970Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-vertx-http-deployment-spi-3.40.1.2.jar
+2026-11-20T07:55:02.3859529Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.arc.arc-processor-3.40.1.2.jar
+2026-11-20T07:55:02.3891023Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-tls-registry-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3891773Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-panache-common-deployment-3.40.1.2.jar
+2026-11-20T07:55:02.3893344Z keycloak-999.0.0-SNAPSHOT/lib/app/keycloak.jar
+2026-11-20T07:55:02.3893678Z keycloak-999.0.0-SNAPSHOT/lib/quarkus-run.jar
+2026-11-20T07:55:02.3894034Z keycloak-999.0.0-SNAPSHOT/conf/README.md
+2026-11-20T07:55:02.3894346Z keycloak-999.0.0-SNAPSHOT/conf/keycloak.conf
+2026-11-20T07:55:02.3895088Z keycloak-999.0.0-SNAPSHOT/conf/truststores/
+2026-11-20T07:55:02.3895404Z keycloak-999.0.0-SNAPSHOT/LICENSE.txt
+2026-11-20T07:55:02.3920302Z Prepare all required actions
+2026-11-20T07:55:02.3939572Z ##[group]Run ./.github/actions/playwright-setup
+2026-11-20T07:55:02.3939749Z with:
+2026-11-20T07:55:02.3939882Z   workspace: @keycloak/keycloak-admin-ui
+2026-11-20T07:55:02.3940040Z   browser: firefox
+2026-11-20T07:55:02.3940167Z env:
+2026-11-20T07:55:02.3940288Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:55:02.3940441Z   WIREIT_CACHE: github
+2026-11-20T07:55:02.3940582Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:55:02.3940808Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:02.3941080Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:02.3941578Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-20T07:55:02.3941989Z ##[endgroup]
+2026-11-20T07:55:02.3943829Z ##[start-action display=Install Playwright browser;id=__self_3.__run]
+2026-11-20T07:55:02.3952167Z ##[group]Run pnpm --fail-if-no-match --filter @keycloak/keycloak-admin-ui exec playwright install --with-deps firefox
+2026-11-20T07:55:02.3952609Z [36;1mpnpm --fail-if-no-match --filter @keycloak/keycloak-admin-ui exec playwright install --with-deps firefox[0m
+2026-11-20T07:55:02.3964799Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:55:02.3964981Z env:
+2026-11-20T07:55:02.3965111Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:55:02.3965271Z   WIREIT_CACHE: github
+2026-11-20T07:55:02.3965416Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:55:02.3965633Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:02.3965901Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:02.3966388Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-20T07:55:02.3966814Z ##[endgroup]
+2026-11-20T07:55:03.1926890Z Installing dependencies...
+2026-11-20T07:55:03.2257385Z Switching to root user to install dependencies...
+2026-11-20T07:55:03.3907695Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-20T07:55:03.4762985Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-11-20T07:55:03.6131153Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [799 kB]
+2026-11-20T07:55:03.6568079Z Get:8 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [728 kB]
+2026-11-20T07:55:03.6851641Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-11-20T07:55:03.8164537Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-11-20T07:55:04.3225301Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-11-20T07:55:04.4514399Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-11-20T07:55:04.5855319Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1475 kB]
+2026-11-20T07:55:04.9847571Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [319 kB]
+2026-11-20T07:55:05.1173780Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1716 kB]
+2026-11-20T07:55:07.3253361Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [346 kB]
+2026-11-20T07:55:07.4619117Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1922 kB]
+2026-11-20T07:55:08.7739642Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [443 kB]
+2026-11-20T07:55:08.9054225Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [14.6 kB]
+2026-11-20T07:55:09.0347826Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1199 kB]
+2026-11-20T07:55:11.1179504Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [239 kB]
+2026-11-20T07:55:11.2484368Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1231 kB]
+2026-11-20T07:55:11.6784135Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [248 kB]
+2026-11-20T07:55:11.8065259Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1792 kB]
+2026-11-20T07:55:12.0703249Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [414 kB]
+2026-11-20T07:55:12.2014381Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [12.7 kB]
+2026-11-20T07:55:15.1631911Z Fetched 13.3 MB in 9s (1497 kB/s)
+2026-11-20T07:55:15.9155102Z Reading package lists...
+2026-11-20T07:55:15.9455452Z Reading package lists...
+2026-11-20T07:55:16.1147263Z Building dependency tree...
+2026-11-20T07:55:16.1153427Z Reading state information...
+2026-11-20T07:55:16.2188233Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+2026-11-20T07:55:16.2188566Z libasound2t64 set to manually installed.
+2026-11-20T07:55:16.2188822Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-20T07:55:16.2189057Z libatk1.0-0t64 set to manually installed.
+2026-11-20T07:55:16.2189307Z libcairo-gobject2 is already the newest version (1.18.0-3build1).
+2026-11-20T07:55:16.2189550Z libcairo-gobject2 set to manually installed.
+2026-11-20T07:55:16.2189797Z libcairo2 is already the newest version (1.18.0-3build1).
+2026-11-20T07:55:16.2190014Z libcairo2 set to manually installed.
+2026-11-20T07:55:16.2190250Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2026-11-20T07:55:16.2190482Z libdbus-1-3 set to manually installed.
+2026-11-20T07:55:16.2190722Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-11-20T07:55:16.2190956Z libfontconfig1 set to manually installed.
+2026-11-20T07:55:16.2191265Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.2).
+2026-11-20T07:55:16.2191499Z libfreetype6 set to manually installed.
+2026-11-20T07:55:16.2191770Z libgdk-pixbuf-2.0-0 is already the newest version (2.42.10+dfsg-3ubuntu3.3).
+2026-11-20T07:55:16.2192055Z libgdk-pixbuf-2.0-0 set to manually installed.
+2026-11-20T07:55:16.2192316Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.10).
+2026-11-20T07:55:16.2192602Z libglib2.0-0t64 set to manually installed.
+2026-11-20T07:55:16.2192853Z libgtk-3-0t64 is already the newest version (3.24.41-4ubuntu1.3).
+2026-11-20T07:55:16.2193085Z libgtk-3-0t64 set to manually installed.
+2026-11-20T07:55:16.2193318Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-11-20T07:55:16.2193540Z libpango-1.0-0 set to manually installed.
+2026-11-20T07:55:16.2193788Z libpangocairo-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-11-20T07:55:16.2194036Z libpangocairo-1.0-0 set to manually installed.
+2026-11-20T07:55:16.2194329Z libx11-6 is already the newest version (2:1.8.7-1ubuntu0.1).
+2026-11-20T07:55:16.2194553Z libx11-6 set to manually installed.
+2026-11-20T07:55:16.2194781Z libx11-xcb1 is already the newest version (2:1.8.7-1ubuntu0.1).
+2026-11-20T07:55:16.2195002Z libx11-xcb1 set to manually installed.
+2026-11-20T07:55:16.2195223Z libxcb-shm0 is already the newest version (1.15-1ubuntu2).
+2026-11-20T07:55:16.2195433Z libxcb-shm0 set to manually installed.
+2026-11-20T07:55:16.2195647Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2026-11-20T07:55:16.2195861Z libxcb1 set to manually installed.
+2026-11-20T07:55:16.2196092Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2026-11-20T07:55:16.2196360Z libxcomposite1 set to manually installed.
+2026-11-20T07:55:16.2196593Z libxcursor1 is already the newest version (1:1.2.1-1build1).
+2026-11-20T07:55:16.2196811Z libxcursor1 set to manually installed.
+2026-11-20T07:55:16.2197040Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2026-11-20T07:55:16.2197867Z libxdamage1 set to manually installed.
+2026-11-20T07:55:16.2198093Z libxext6 is already the newest version (2:1.3.4-1build2).
+2026-11-20T07:55:16.2198307Z libxext6 set to manually installed.
+2026-11-20T07:55:16.2198525Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2026-11-20T07:55:16.2198739Z libxfixes3 set to manually installed.
+2026-11-20T07:55:16.2198954Z libxi6 is already the newest version (2:1.8.1-1build1).
+2026-11-20T07:55:16.2199160Z libxi6 set to manually installed.
+2026-11-20T07:55:16.2199374Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2026-11-20T07:55:16.2199601Z libxrandr2 set to manually installed.
+2026-11-20T07:55:16.2199834Z libxrender1 is already the newest version (1:0.9.10-1.1build1).
+2026-11-20T07:55:16.2200054Z libxrender1 set to manually installed.
+2026-11-20T07:55:16.2200292Z xvfb is already the newest version (2:21.1.12-1ubuntu1.9).
+2026-11-20T07:55:16.2200594Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-11-20T07:55:16.2200896Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-11-20T07:55:16.2201137Z fonts-liberation set to manually installed.
+2026-11-20T07:55:16.2201376Z The following additional packages will be installed:
+2026-11-20T07:55:16.2201654Z   libavutil58 libcodec2-1.2 libdav1d7 libgsm1 libhwy1t64 libjxl0.7 libmp3lame0
+2026-11-20T07:55:16.2201988Z   libopus0 librav1e0 librsvg2-2 libshine3 libsoxr0 libspeex1 libsvtav1enc1d1
+2026-11-20T07:55:16.2202282Z   libswresample4 libtheora0 libtwolame0 libva-drm2 libva-x11-2 libva2
+2026-11-20T07:55:16.2202583Z   libvdpau1 libvorbisenc2 libvpl2 libvpx9 libx264-164 libx265-199 libxvidcore4
+2026-11-20T07:55:16.2202903Z   libzvbi-common libzvbi0t64 ocl-icd-libopencl1 xfonts-encodings xfonts-utils
+2026-11-20T07:55:16.2203135Z Suggested packages:
+2026-11-20T07:55:16.2203351Z   libcuda1 libnvcuvid1 libnvidia-encode1 opus-tools librsvg2-bin speex
+2026-11-20T07:55:16.2203569Z   opencl-icd
+2026-11-20T07:55:16.2203704Z Recommended packages:
+2026-11-20T07:55:16.2203922Z   fonts-ipafont-mincho fonts-tlwg-loma librsvg2-common va-driver-all
+2026-11-20T07:55:16.2204169Z   | va-driver vdpau-driver-all | vdpau-driver
+2026-11-20T07:55:16.2401034Z The following NEW packages will be installed:
+2026-11-20T07:55:16.2401566Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-11-20T07:55:16.2402258Z   fonts-wqy-zenhei libavcodec60 libavutil58 libcodec2-1.2 libdav1d7 libgsm1
+2026-11-20T07:55:16.2404598Z   libhwy1t64 libjxl0.7 libmp3lame0 libopus0 librav1e0 librsvg2-2 libshine3
+2026-11-20T07:55:16.2405155Z   libsoxr0 libspeex1 libsvtav1enc1d1 libswresample4 libtheora0 libtwolame0
+2026-11-20T07:55:16.2405699Z   libva-drm2 libva-x11-2 libva2 libvdpau1 libvorbisenc2 libvpl2 libvpx9
+2026-11-20T07:55:16.2406295Z   libx264-164 libx265-199 libxvidcore4 libzvbi-common libzvbi0t64
+2026-11-20T07:55:16.2406876Z   ocl-icd-libopencl1 xfonts-cyrillic xfonts-encodings xfonts-scalable
+2026-11-20T07:55:16.2407347Z   xfonts-utils
+2026-11-20T07:55:16.2556332Z 0 upgraded, 40 newly installed, 0 to remove and 79 not upgraded.
+2026-11-20T07:55:16.2556718Z Need to get 48.8 MB of archives.
+2026-11-20T07:55:16.2557174Z After this operation, 168 MB of additional disk space will be used.
+2026-11-20T07:55:16.2557562Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-20T07:55:16.3031607Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+2026-11-20T07:55:16.3867452Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+2026-11-20T07:55:16.4549348Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+2026-11-20T07:55:16.4716842Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+2026-11-20T07:55:16.5238175Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+2026-11-20T07:55:16.7260048Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libva2 amd64 2.20.0-2ubuntu0.2 [66.4 kB]
+2026-11-20T07:55:16.7414325Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libva-drm2 amd64 2.20.0-2ubuntu0.2 [7124 B]
+2026-11-20T07:55:16.7554819Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libva-x11-2 amd64 2.20.0-2ubuntu0.2 [12.0 kB]
+2026-11-20T07:55:16.7697048Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libvdpau1 amd64 1.5-2build1 [27.8 kB]
+2026-11-20T07:55:16.7841710Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libvpl2 amd64 2023.3.0-1build1 [99.8 kB]
+2026-11-20T07:55:16.7993621Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 ocl-icd-libopencl1 amd64 2.3.2-1build1 [38.5 kB]
+2026-11-20T07:55:16.8142616Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libavutil58 amd64 7:6.1.1-3ubuntu5 [401 kB]
+2026-11-20T07:55:16.8336557Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libcodec2-1.2 amd64 1.2.0-2build1 [8998 kB]
+2026-11-20T07:55:16.9472160Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libdav1d7 amd64 1.4.1-1build1 [604 kB]
+2026-11-20T07:55:16.9672834Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libgsm1 amd64 1.0.22-1build1 [27.8 kB]
+2026-11-20T07:55:16.9816992Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhwy1t64 amd64 1.0.7-8.1build1 [584 kB]
+2026-11-20T07:55:17.0014984Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libjxl0.7 amd64 0.7.0-10.2ubuntu6.1 [1001 kB]
+2026-11-20T07:55:17.0266997Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libmp3lame0 amd64 3.100-6build1 [142 kB]
+2026-11-20T07:55:17.0910626Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libopus0 amd64 1.4-1build1 [208 kB]
+2026-11-20T07:55:17.1069285Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 librav1e0 amd64 0.7.1-2 [1022 kB]
+2026-11-20T07:55:17.1306091Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 librsvg2-2 amd64 2.58.0+dfsg-1ubuntu0.1 [2141 kB]
+2026-11-20T07:55:17.1654970Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libshine3 amd64 3.1.1-2build1 [23.2 kB]
+2026-11-20T07:55:17.1804553Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libspeex1 amd64 1.2.1-2ubuntu2.24.04.1 [59.6 kB]
+2026-11-20T07:55:17.1954067Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libsvtav1enc1d1 amd64 1.7.0+dfsg-2build1 [2425 kB]
+2026-11-20T07:55:17.2330321Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libsoxr0 amd64 0.1.3-4build3 [80.0 kB]
+2026-11-20T07:55:17.2479912Z Get:27 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libswresample4 amd64 7:6.1.1-3ubuntu5 [63.8 kB]
+2026-11-20T07:55:17.2629911Z Get:28 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libtheora0 amd64 1.1.1+dfsg.1-16.1build3 [211 kB]
+2026-11-20T07:55:17.2793765Z Get:29 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libtwolame0 amd64 0.4.0-2build3 [52.3 kB]
+2026-11-20T07:55:17.2943422Z Get:30 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libvorbisenc2 amd64 1.3.7-1build3 [80.8 kB]
+2026-11-20T07:55:17.3096691Z Get:31 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libvpx9 amd64 1.14.0-1ubuntu2.3 [1143 kB]
+2026-11-20T07:55:17.3357448Z Get:32 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libx264-164 amd64 2:0.164.3108+git31e19f9-1 [604 kB]
+2026-11-20T07:55:17.3559489Z Get:33 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libx265-199 amd64 3.5-2build1 [1226 kB]
+2026-11-20T07:55:17.3814918Z Get:34 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libxvidcore4 amd64 2:1.3.7-1build1 [219 kB]
+2026-11-20T07:55:17.3976885Z Get:35 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libzvbi-common all 0.2.42-2 [42.4 kB]
+2026-11-20T07:55:17.4124002Z Get:36 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libzvbi0t64 amd64 0.2.42-2 [261 kB]
+2026-11-20T07:55:17.4291380Z Get:37 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libavcodec60 amd64 7:6.1.1-3ubuntu5 [5851 kB]
+2026-11-20T07:55:17.4985944Z Get:38 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+2026-11-20T07:55:17.5686118Z Get:39 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+2026-11-20T07:55:17.5829997Z Get:40 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+2026-11-20T07:55:17.6011140Z Get:41 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+2026-11-20T07:55:17.8326535Z Fetched 48.8 MB in 1s (36.0 MB/s)
+2026-11-20T07:55:17.8528645Z Selecting previously unselected package fonts-ipafont-gothic.
+2026-11-20T07:55:17.8890202Z (Reading database ... 
+2026-11-20T07:55:17.8890524Z (Reading database ... 5%
+2026-11-20T07:55:17.8890774Z (Reading database ... 10%
+2026-11-20T07:55:17.8890998Z (Reading database ... 15%
+2026-11-20T07:55:17.8891210Z (Reading database ... 20%
+2026-11-20T07:55:17.8891418Z (Reading database ... 25%
+2026-11-20T07:55:17.8891634Z (Reading database ... 30%
+2026-11-20T07:55:17.8891846Z (Reading database ... 35%
+2026-11-20T07:55:17.8892059Z (Reading database ... 40%
+2026-11-20T07:55:17.8892263Z (Reading database ... 45%
+2026-11-20T07:55:17.8892471Z (Reading database ... 50%
+2026-11-20T07:55:17.8911045Z (Reading database ... 55%
+2026-11-20T07:55:17.9132062Z (Reading database ... 60%
+2026-11-20T07:55:17.9370529Z (Reading database ... 65%
+2026-11-20T07:55:17.9488843Z (Reading database ... 70%
+2026-11-20T07:55:17.9627296Z (Reading database ... 75%
+2026-11-20T07:55:17.9769965Z (Reading database ... 80%
+2026-11-20T07:55:18.0019335Z (Reading database ... 85%
+2026-11-20T07:55:18.0175960Z (Reading database ... 90%
+2026-11-20T07:55:18.0335048Z (Reading database ... 95%
+2026-11-20T07:55:18.0335355Z (Reading database ... 100%
+2026-11-20T07:55:18.0335725Z (Reading database ... 210270 files and directories currently installed.)
+2026-11-20T07:55:18.0368197Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+2026-11-20T07:55:18.0425945Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-11-20T07:55:18.1830503Z Selecting previously unselected package fonts-freefont-ttf.
+2026-11-20T07:55:18.1941758Z Preparing to unpack .../01-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+2026-11-20T07:55:18.1947917Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-11-20T07:55:18.2514656Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2026-11-20T07:55:18.2626186Z Preparing to unpack .../02-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+2026-11-20T07:55:18.2632540Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-11-20T07:55:18.2779993Z Selecting previously unselected package fonts-unifont.
+2026-11-20T07:55:18.2891996Z Preparing to unpack .../03-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+2026-11-20T07:55:18.2898006Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+2026-11-20T07:55:18.3822228Z Selecting previously unselected package fonts-wqy-zenhei.
+2026-11-20T07:55:18.3933731Z Preparing to unpack .../04-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+2026-11-20T07:55:18.4010150Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+2026-11-20T07:55:18.6897503Z Selecting previously unselected package libva2:amd64.
+2026-11-20T07:55:18.7008940Z Preparing to unpack .../05-libva2_2.20.0-2ubuntu0.2_amd64.deb ...
+2026-11-20T07:55:18.7021894Z Unpacking libva2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T07:55:18.7168850Z Selecting previously unselected package libva-drm2:amd64.
+2026-11-20T07:55:18.7280003Z Preparing to unpack .../06-libva-drm2_2.20.0-2ubuntu0.2_amd64.deb ...
+2026-11-20T07:55:18.7286019Z Unpacking libva-drm2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T07:55:18.7422048Z Selecting previously unselected package libva-x11-2:amd64.
+2026-11-20T07:55:18.7524543Z Preparing to unpack .../07-libva-x11-2_2.20.0-2ubuntu0.2_amd64.deb ...
+2026-11-20T07:55:18.7532148Z Unpacking libva-x11-2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T07:55:18.7667080Z Selecting previously unselected package libvdpau1:amd64.
+2026-11-20T07:55:18.7769101Z Preparing to unpack .../08-libvdpau1_1.5-2build1_amd64.deb ...
+2026-11-20T07:55:18.7775587Z Unpacking libvdpau1:amd64 (1.5-2build1) ...
+2026-11-20T07:55:18.7935050Z Selecting previously unselected package libvpl2.
+2026-11-20T07:55:18.8036206Z Preparing to unpack .../09-libvpl2_2023.3.0-1build1_amd64.deb ...
+2026-11-20T07:55:18.8043212Z Unpacking libvpl2 (2023.3.0-1build1) ...
+2026-11-20T07:55:18.8198775Z Selecting previously unselected package ocl-icd-libopencl1:amd64.
+2026-11-20T07:55:18.8299542Z Preparing to unpack .../10-ocl-icd-libopencl1_2.3.2-1build1_amd64.deb ...
+2026-11-20T07:55:18.8306377Z Unpacking ocl-icd-libopencl1:amd64 (2.3.2-1build1) ...
+2026-11-20T07:55:18.8471946Z Selecting previously unselected package libavutil58:amd64.
+2026-11-20T07:55:18.8572394Z Preparing to unpack .../11-libavutil58_7%3a6.1.1-3ubuntu5_amd64.deb ...
+2026-11-20T07:55:18.8578222Z Unpacking libavutil58:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T07:55:18.8757550Z Selecting previously unselected package libcodec2-1.2:amd64.
+2026-11-20T07:55:18.8857798Z Preparing to unpack .../12-libcodec2-1.2_1.2.0-2build1_amd64.deb ...
+2026-11-20T07:55:18.8863643Z Unpacking libcodec2-1.2:amd64 (1.2.0-2build1) ...
+2026-11-20T07:55:18.9460687Z Selecting previously unselected package libdav1d7:amd64.
+2026-11-20T07:55:18.9573148Z Preparing to unpack .../13-libdav1d7_1.4.1-1build1_amd64.deb ...
+2026-11-20T07:55:18.9579340Z Unpacking libdav1d7:amd64 (1.4.1-1build1) ...
+2026-11-20T07:55:18.9771250Z Selecting previously unselected package libgsm1:amd64.
+2026-11-20T07:55:18.9882091Z Preparing to unpack .../14-libgsm1_1.0.22-1build1_amd64.deb ...
+2026-11-20T07:55:18.9888570Z Unpacking libgsm1:amd64 (1.0.22-1build1) ...
+2026-11-20T07:55:19.0034355Z Selecting previously unselected package libhwy1t64:amd64.
+2026-11-20T07:55:19.0136372Z Preparing to unpack .../15-libhwy1t64_1.0.7-8.1build1_amd64.deb ...
+2026-11-20T07:55:19.0141518Z Unpacking libhwy1t64:amd64 (1.0.7-8.1build1) ...
+2026-11-20T07:55:19.0392007Z Selecting previously unselected package libjxl0.7:amd64.
+2026-11-20T07:55:19.0493593Z Preparing to unpack .../16-libjxl0.7_0.7.0-10.2ubuntu6.1_amd64.deb ...
+2026-11-20T07:55:19.0499624Z Unpacking libjxl0.7:amd64 (0.7.0-10.2ubuntu6.1) ...
+2026-11-20T07:55:19.0739122Z Selecting previously unselected package libmp3lame0:amd64.
+2026-11-20T07:55:19.0840711Z Preparing to unpack .../17-libmp3lame0_3.100-6build1_amd64.deb ...
+2026-11-20T07:55:19.0848335Z Unpacking libmp3lame0:amd64 (3.100-6build1) ...
+2026-11-20T07:55:19.0999370Z Selecting previously unselected package libopus0:amd64.
+2026-11-20T07:55:19.1099911Z Preparing to unpack .../18-libopus0_1.4-1build1_amd64.deb ...
+2026-11-20T07:55:19.1105762Z Unpacking libopus0:amd64 (1.4-1build1) ...
+2026-11-20T07:55:19.1255417Z Selecting previously unselected package librav1e0:amd64.
+2026-11-20T07:55:19.1354470Z Preparing to unpack .../19-librav1e0_0.7.1-2_amd64.deb ...
+2026-11-20T07:55:19.1360639Z Unpacking librav1e0:amd64 (0.7.1-2) ...
+2026-11-20T07:55:19.1602094Z Selecting previously unselected package librsvg2-2:amd64.
+2026-11-20T07:55:19.1704414Z Preparing to unpack .../20-librsvg2-2_2.58.0+dfsg-1ubuntu0.1_amd64.deb ...
+2026-11-20T07:55:19.1710102Z Unpacking librsvg2-2:amd64 (2.58.0+dfsg-1ubuntu0.1) ...
+2026-11-20T07:55:19.2139943Z Selecting previously unselected package libshine3:amd64.
+2026-11-20T07:55:19.2244852Z Preparing to unpack .../21-libshine3_3.1.1-2build1_amd64.deb ...
+2026-11-20T07:55:19.2250979Z Unpacking libshine3:amd64 (3.1.1-2build1) ...
+2026-11-20T07:55:19.2388711Z Selecting previously unselected package libspeex1:amd64.
+2026-11-20T07:55:19.2493177Z Preparing to unpack .../22-libspeex1_1.2.1-2ubuntu2.24.04.1_amd64.deb ...
+2026-11-20T07:55:19.2499222Z Unpacking libspeex1:amd64 (1.2.1-2ubuntu2.24.04.1) ...
+2026-11-20T07:55:19.2639549Z Selecting previously unselected package libsvtav1enc1d1:amd64.
+2026-11-20T07:55:19.2742212Z Preparing to unpack .../23-libsvtav1enc1d1_1.7.0+dfsg-2build1_amd64.deb ...
+2026-11-20T07:55:19.2750099Z Unpacking libsvtav1enc1d1:amd64 (1.7.0+dfsg-2build1) ...
+2026-11-20T07:55:19.3160969Z Selecting previously unselected package libsoxr0:amd64.
+2026-11-20T07:55:19.3269165Z Preparing to unpack .../24-libsoxr0_0.1.3-4build3_amd64.deb ...
+2026-11-20T07:55:19.3275390Z Unpacking libsoxr0:amd64 (0.1.3-4build3) ...
+2026-11-20T07:55:19.3424376Z Selecting previously unselected package libswresample4:amd64.
+2026-11-20T07:55:19.3529357Z Preparing to unpack .../25-libswresample4_7%3a6.1.1-3ubuntu5_amd64.deb ...
+2026-11-20T07:55:19.3535920Z Unpacking libswresample4:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T07:55:19.3682671Z Selecting previously unselected package libtheora0:amd64.
+2026-11-20T07:55:19.3782722Z Preparing to unpack .../26-libtheora0_1.1.1+dfsg.1-16.1build3_amd64.deb ...
+2026-11-20T07:55:19.3787736Z Unpacking libtheora0:amd64 (1.1.1+dfsg.1-16.1build3) ...
+2026-11-20T07:55:19.3946067Z Selecting previously unselected package libtwolame0:amd64.
+2026-11-20T07:55:19.4045576Z Preparing to unpack .../27-libtwolame0_0.4.0-2build3_amd64.deb ...
+2026-11-20T07:55:19.4051819Z Unpacking libtwolame0:amd64 (0.4.0-2build3) ...
+2026-11-20T07:55:19.4192702Z Selecting previously unselected package libvorbisenc2:amd64.
+2026-11-20T07:55:19.4318954Z Preparing to unpack .../28-libvorbisenc2_1.3.7-1build3_amd64.deb ...
+2026-11-20T07:55:19.4325721Z Unpacking libvorbisenc2:amd64 (1.3.7-1build3) ...
+2026-11-20T07:55:19.4524844Z Selecting previously unselected package libvpx9:amd64.
+2026-11-20T07:55:19.4621216Z Preparing to unpack .../29-libvpx9_1.14.0-1ubuntu2.3_amd64.deb ...
+2026-11-20T07:55:19.4627196Z Unpacking libvpx9:amd64 (1.14.0-1ubuntu2.3) ...
+2026-11-20T07:55:19.4917888Z Selecting previously unselected package libx264-164:amd64.
+2026-11-20T07:55:19.5013919Z Preparing to unpack .../30-libx264-164_2%3a0.164.3108+git31e19f9-1_amd64.deb ...
+2026-11-20T07:55:19.5018965Z Unpacking libx264-164:amd64 (2:0.164.3108+git31e19f9-1) ...
+2026-11-20T07:55:19.5248308Z Selecting previously unselected package libx265-199:amd64.
+2026-11-20T07:55:19.5343151Z Preparing to unpack .../31-libx265-199_3.5-2build1_amd64.deb ...
+2026-11-20T07:55:19.5350029Z Unpacking libx265-199:amd64 (3.5-2build1) ...
+2026-11-20T07:55:19.6052734Z Selecting previously unselected package libxvidcore4:amd64.
+2026-11-20T07:55:19.6149483Z Preparing to unpack .../32-libxvidcore4_2%3a1.3.7-1build1_amd64.deb ...
+2026-11-20T07:55:19.6155880Z Unpacking libxvidcore4:amd64 (2:1.3.7-1build1) ...
+2026-11-20T07:55:19.6363139Z Selecting previously unselected package libzvbi-common.
+2026-11-20T07:55:19.6473545Z Preparing to unpack .../33-libzvbi-common_0.2.42-2_all.deb ...
+2026-11-20T07:55:19.6480275Z Unpacking libzvbi-common (0.2.42-2) ...
+2026-11-20T07:55:19.6670651Z Selecting previously unselected package libzvbi0t64:amd64.
+2026-11-20T07:55:19.6779378Z Preparing to unpack .../34-libzvbi0t64_0.2.42-2_amd64.deb ...
+2026-11-20T07:55:19.6784519Z Unpacking libzvbi0t64:amd64 (0.2.42-2) ...
+2026-11-20T07:55:19.6961356Z Selecting previously unselected package libavcodec60:amd64.
+2026-11-20T07:55:19.7070306Z Preparing to unpack .../35-libavcodec60_7%3a6.1.1-3ubuntu5_amd64.deb ...
+2026-11-20T07:55:19.7076154Z Unpacking libavcodec60:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T07:55:19.7826124Z Selecting previously unselected package xfonts-encodings.
+2026-11-20T07:55:19.7937237Z Preparing to unpack .../36-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+2026-11-20T07:55:19.7943643Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-11-20T07:55:19.8141064Z Selecting previously unselected package xfonts-utils.
+2026-11-20T07:55:19.8251976Z Preparing to unpack .../37-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+2026-11-20T07:55:19.8258244Z Unpacking xfonts-utils (1:7.7+6build3) ...
+2026-11-20T07:55:19.8502246Z Selecting previously unselected package xfonts-cyrillic.
+2026-11-20T07:55:19.8608012Z Preparing to unpack .../38-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+2026-11-20T07:55:19.8615469Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-11-20T07:55:19.8845354Z Selecting previously unselected package xfonts-scalable.
+2026-11-20T07:55:19.8948987Z Preparing to unpack .../39-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+2026-11-20T07:55:19.8956210Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+2026-11-20T07:55:19.9368962Z Setting up libhwy1t64:amd64 (1.0.7-8.1build1) ...
+2026-11-20T07:55:19.9385485Z Setting up libspeex1:amd64 (1.2.1-2ubuntu2.24.04.1) ...
+2026-11-20T07:55:19.9397226Z Setting up libshine3:amd64 (3.1.1-2build1) ...
+2026-11-20T07:55:19.9408701Z Setting up libvpl2 (2023.3.0-1build1) ...
+2026-11-20T07:55:19.9420751Z Setting up libx264-164:amd64 (2:0.164.3108+git31e19f9-1) ...
+2026-11-20T07:55:19.9432173Z Setting up libtwolame0:amd64 (0.4.0-2build3) ...
+2026-11-20T07:55:19.9443569Z Setting up libgsm1:amd64 (1.0.22-1build1) ...
+2026-11-20T07:55:19.9455184Z Setting up libsoxr0:amd64 (0.1.3-4build3) ...
+2026-11-20T07:55:19.9466356Z Setting up libcodec2-1.2:amd64 (1.2.0-2build1) ...
+2026-11-20T07:55:19.9477525Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+2026-11-20T07:55:19.9556608Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-11-20T07:55:19.9568567Z Setting up libsvtav1enc1d1:amd64 (1.7.0+dfsg-2build1) ...
+2026-11-20T07:55:19.9580045Z Setting up libxvidcore4:amd64 (2:1.3.7-1build1) ...
+2026-11-20T07:55:19.9591453Z Setting up librav1e0:amd64 (0.7.1-2) ...
+2026-11-20T07:55:19.9603741Z Setting up librsvg2-2:amd64 (2.58.0+dfsg-1ubuntu0.1) ...
+2026-11-20T07:55:19.9616460Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-11-20T07:55:19.9627497Z Setting up libva2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T07:55:19.9638829Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-11-20T07:55:19.9650869Z Setting up libopus0:amd64 (1.4-1build1) ...
+2026-11-20T07:55:19.9662172Z Setting up libjxl0.7:amd64 (0.7.0-10.2ubuntu6.1) ...
+2026-11-20T07:55:19.9673620Z Setting up libx265-199:amd64 (3.5-2build1) ...
+2026-11-20T07:55:19.9685840Z Setting up libvpx9:amd64 (1.14.0-1ubuntu2.3) ...
+2026-11-20T07:55:19.9697937Z Setting up libdav1d7:amd64 (1.4.1-1build1) ...
+2026-11-20T07:55:19.9709345Z Setting up libva-drm2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T07:55:19.9720879Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-11-20T07:55:19.9805941Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2026-11-20T07:55:19.9847763Z Setting up ocl-icd-libopencl1:amd64 (2.3.2-1build1) ...
+2026-11-20T07:55:19.9921580Z Setting up libvdpau1:amd64 (1.5-2build1) ...
+2026-11-20T07:55:20.0036215Z Setting up libtheora0:amd64 (1.1.1+dfsg.1-16.1build3) ...
+2026-11-20T07:55:20.0131307Z Setting up libva-x11-2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T07:55:20.0198168Z Setting up libzvbi-common (0.2.42-2) ...
+2026-11-20T07:55:20.0268758Z Setting up libmp3lame0:amd64 (3.100-6build1) ...
+2026-11-20T07:55:20.0302476Z Setting up libvorbisenc2:amd64 (1.3.7-1build3) ...
+2026-11-20T07:55:20.0314648Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+2026-11-20T07:55:20.0326709Z Setting up libzvbi0t64:amd64 (0.2.42-2) ...
+2026-11-20T07:55:20.0338951Z Setting up libavutil58:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T07:55:20.0351078Z Setting up xfonts-utils (1:7.7+6build3) ...
+2026-11-20T07:55:20.0381570Z Setting up libswresample4:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T07:55:20.0393768Z Setting up libavcodec60:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T07:55:20.0406363Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-11-20T07:55:20.0647999Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+2026-11-20T07:55:20.0865616Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+2026-11-20T07:55:20.2216643Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-11-20T07:55:20.2231480Z Not building database; man-db/auto-update is not 'true'.
+2026-11-20T07:55:20.2241218Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-11-20T07:55:20.6217959Z 
+2026-11-20T07:55:20.6219305Z Failed to retrieve available kernel versions.
+2026-11-20T07:55:20.6219481Z 
+2026-11-20T07:55:20.6219556Z Restarting services...
+2026-11-20T07:55:20.6271855Z 
+2026-11-20T07:55:20.6272009Z Service restarts being deferred:
+2026-11-20T07:55:20.6273091Z  systemctl restart boba-runner.service
+2026-11-20T07:55:20.6273209Z 
+2026-11-20T07:55:20.6273449Z No containers need to be restarted.
+2026-11-20T07:55:20.6273590Z 
+2026-11-20T07:55:20.6273715Z No user sessions are running outdated binaries.
+2026-11-20T07:55:20.6273845Z 
+2026-11-20T07:55:20.6274023Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-11-20T07:55:21.3461207Z Downloading Firefox 157.0 (playwright firefox v1555) from https://cdn.playwright.dev/dbazure/download/playwright/builds/firefox/1555/firefox-ubuntu-24.04.zip
+2026-11-20T07:55:21.6044499Z |                                                                                |   0% of 111 MiB
+2026-11-20T07:55:21.7469471Z |■■■■■■■■                                                                        |  10% of 111 MiB
+2026-11-20T07:55:21.8281430Z |■■■■■■■■■■■■■■■■                                                                |  20% of 111 MiB
+2026-11-20T07:55:21.9271908Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 111 MiB
+2026-11-20T07:55:22.0283617Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 111 MiB
+2026-11-20T07:55:22.1260365Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 111 MiB
+2026-11-20T07:55:22.2259566Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 111 MiB
+2026-11-20T07:55:22.3242556Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 111 MiB
+2026-11-20T07:55:22.4242171Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 111 MiB
+2026-11-20T07:55:22.5224087Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 111 MiB
+2026-11-20T07:55:22.6212967Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 111 MiB
+2026-11-20T07:55:23.7266310Z Firefox 157.0 (playwright firefox v1555) downloaded to /home/runner/.cache/ms-playwright/firefox-1555
+2026-11-20T07:55:23.7269630Z Downloading FFmpeg (playwright ffmpeg v1013) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1013/ffmpeg-linux.zip
+2026-11-20T07:55:24.0121436Z |                                                                                |   0% of 2.2 MiB
+2026-11-20T07:55:24.0500175Z |■■■■■■■■                                                                        |  10% of 2.2 MiB
+2026-11-20T07:55:24.0639292Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.2 MiB
+2026-11-20T07:55:24.0746077Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.2 MiB
+2026-11-20T07:55:24.0789259Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.2 MiB
+2026-11-20T07:55:24.0874955Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.2 MiB
+2026-11-20T07:55:24.0898073Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.2 MiB
+2026-11-20T07:55:24.0924727Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.2 MiB
+2026-11-20T07:55:24.0943433Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.2 MiB
+2026-11-20T07:55:24.0963980Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.2 MiB
+2026-11-20T07:55:24.0982781Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.2 MiB
+2026-11-20T07:55:24.1390036Z FFmpeg (playwright ffmpeg v1013) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1013
+2026-11-20T07:55:24.2864375Z ##[end-action id=__self_3.__run;outcome=success;conclusion=success;duration_ms=21892]
+2026-11-20T07:55:24.2881807Z ##[group]Run curl --connect-timeout 5 --max-time 10 --retry 10 --retry-all-errors --retry-delay 10 --retry-max-time 120 -s -o /dev/null http://127.0.0.1:8080
+2026-11-20T07:55:24.2882422Z [36;1mcurl --connect-timeout 5 --max-time 10 --retry 10 --retry-all-errors --retry-delay 10 --retry-max-time 120 -s -o /dev/null http://127.0.0.1:8080[0m
+2026-11-20T07:55:24.2896920Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:55:24.2897119Z env:
+2026-11-20T07:55:24.2897258Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:55:24.2897425Z   WIREIT_CACHE: github
+2026-11-20T07:55:24.2897578Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:55:24.2897800Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:24.2898066Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:24.2898580Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-20T07:55:24.2899003Z ##[endgroup]
+2026-11-20T07:55:24.3618699Z ##[group]Run pnpm --fail-if-no-match --filter @keycloak/keycloak-admin-client build
+2026-11-20T07:55:24.3619046Z [36;1mpnpm --fail-if-no-match --filter @keycloak/keycloak-admin-client build[0m
+2026-11-20T07:55:24.3631314Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:55:24.3631502Z env:
+2026-11-20T07:55:24.3631635Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:55:24.3631809Z   WIREIT_CACHE: github
+2026-11-20T07:55:24.3631955Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:55:24.3632176Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:24.3632445Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:24.3632944Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-20T07:55:24.3633429Z ##[endgroup]
+2026-11-20T07:55:24.6110953Z $ wireit
+2026-11-20T07:55:24.7109827Z Analyzing
+2026-11-20T07:55:25.7108885Z   0% [0 / 3] [1 running] generate:openapi
+2026-11-20T07:55:26.7110773Z  33% [1 / 3] [1 running] generate:doc-examples
+2026-11-20T07:55:28.7127678Z  67% [2 / 3] [1 running] build
+2026-11-20T07:55:28.7976260Z ✅ Ran 3 scripts and skipped 0 in 4.1s.
+2026-11-20T07:55:28.8299817Z ##[group]Run coldteadotai/boba@v1
+2026-11-20T07:55:28.8299987Z with:
+2026-11-20T07:55:28.8300116Z   working-directory: js/apps/admin-ui
+2026-11-20T07:55:28.8300277Z   project: firefox
+2026-11-20T07:55:28.8300400Z   turbo: true
+2026-11-20T07:55:28.8300518Z   fail-fast: false
+2026-11-20T07:55:28.8301964Z   github-token: ***
+2026-11-20T07:55:28.8302100Z   timeout-minutes: 60
+2026-11-20T07:55:28.8302246Z   check-name: Boba
+2026-11-20T07:55:28.8302361Z   post: true
+2026-11-20T07:55:28.8302646Z env:
+2026-11-20T07:55:28.8302775Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:55:28.8302930Z   WIREIT_CACHE: github
+2026-11-20T07:55:28.8303068Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:55:28.8303283Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:28.8303550Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:55:28.8304062Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-20T07:55:28.8304477Z ##[endgroup]
+2026-11-20T07:55:29.9264427Z Waiting for Boba job bj_77bc3333cdc68b7f
+2026-11-20T07:55:30.1570049Z Boba history read in 230 ms
+2026-11-20T07:55:31.3071584Z Boba job bj_77bc3333cdc68b7f: running, building
+2026-11-20T07:55:40.8481882Z Boba job bj_77bc3333cdc68b7f: running, listing
+2026-11-20T07:55:44.4031189Z Boba job bj_77bc3333cdc68b7f: running, running
+2026-11-20T07:59:51.8506740Z Boba job bj_77bc3333cdc68b7f: done
+2026-11-20T07:59:51.9434309Z Merged report unpacked into /home/runner/work/_temp/boba-report
+2026-11-20T07:59:52.8322259Z Check run: https://github.com/boba-benchmarks/keycloak/runs/136162746925
+2026-11-20T07:59:52.8605601Z Prepare all required actions
+2026-11-20T07:59:52.8628765Z ##[group]Run ./.github/actions/playwright-summary
+2026-11-20T07:59:52.8629060Z with:
+2026-11-20T07:59:52.8629257Z   workspace-dir: admin-ui
+2026-11-20T07:59:52.8629473Z   title: Admin UI E2E (firefox)
+2026-11-20T07:59:52.8629717Z env:
+2026-11-20T07:59:52.8629919Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:59:52.8630166Z   WIREIT_CACHE: github
+2026-11-20T07:59:52.8630388Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:59:52.8630712Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:59:52.8631055Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:59:52.8631658Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-20T07:59:52.8632146Z ##[endgroup]
+2026-11-20T07:59:52.8635481Z ##[start-action display=Summarize Playwright results;id=__self_4.__run]
+2026-11-20T07:59:52.8645707Z ##[group]Run if [ ! -f "$REPORT" ]; then
+2026-11-20T07:59:52.8645993Z [36;1mif [ ! -f "$REPORT" ]; then[0m
+2026-11-20T07:59:52.8646279Z [36;1m  echo "No Playwright results found at $REPORT"[0m
+2026-11-20T07:59:52.8646532Z [36;1m  exit 0[0m
+2026-11-20T07:59:52.8646725Z [36;1mfi[0m
+2026-11-20T07:59:52.8646911Z [36;1m{[0m
+2026-11-20T07:59:52.8647138Z [36;1m  echo "### $TITLE"[0m
+2026-11-20T07:59:52.8647348Z [36;1m  echo[0m
+2026-11-20T07:59:52.8647742Z [36;1m  jq -r '.stats | "Duration: \((.duration / 1000 | floor))s, expected: \(.expected), unexpected: \(.unexpected), flaky: \(.flaky), skipped: \(.skipped)"' "$REPORT"[0m
+2026-11-20T07:59:52.8648187Z [36;1m  echo[0m
+2026-11-20T07:59:52.8648387Z [36;1m  echo "Slowest tests:"[0m
+2026-11-20T07:59:52.8648607Z [36;1m  echo[0m
+2026-11-20T07:59:52.8648838Z [36;1m  echo "| Duration | Test |"[0m
+2026-11-20T07:59:52.8649076Z [36;1m  echo "|---:|---|"[0m
+2026-11-20T07:59:52.8649455Z [36;1m  jq -r '[.. | objects | select(has("specs")) | .specs[] | {title: (.file + " › " + .title), duration: ([.tests[].results[].duration] | add // 0)}][0m
+2026-11-20T07:59:52.8649885Z [36;1m    | sort_by(-.duration) | .[:20][][0m
+2026-11-20T07:59:52.8650145Z [36;1m    | (.duration / 100 | round) as $tenths[0m
+2026-11-20T07:59:52.8650478Z [36;1m    | "| \($tenths / 10 | floor).\($tenths % 10)s | \(.title) |"' "$REPORT"[0m
+2026-11-20T07:59:52.8650820Z [36;1m} >> "$GITHUB_STEP_SUMMARY"[0m
+2026-11-20T07:59:52.8664160Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T07:59:52.8664430Z env:
+2026-11-20T07:59:52.8664669Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:59:52.8665169Z   WIREIT_CACHE: github
+2026-11-20T07:59:52.8665394Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:59:52.8665724Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:59:52.8666073Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:59:52.8666641Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-20T07:59:52.8667193Z   REPORT: js/apps/admin-ui/playwright-results.json
+2026-11-20T07:59:52.8667465Z   TITLE: Admin UI E2E (firefox)
+2026-11-20T07:59:52.8667689Z ##[endgroup]
+2026-11-20T07:59:52.8708198Z No Playwright results found at js/apps/admin-ui/playwright-results.json
+2026-11-20T07:59:52.8712440Z ##[end-action id=__self_4.__run;outcome=success;conclusion=success;duration_ms=7]
+2026-11-20T07:59:52.8748673Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-11-20T07:59:52.8749000Z with:
+2026-11-20T07:59:52.8749213Z   name: admin-ui-playwright-report-firefox
+2026-11-20T07:59:52.8749471Z   path: js/apps/admin-ui/playwright-report
+2026-11-20T07:59:52.8749709Z   retention-days: 7
+2026-11-20T07:59:52.8749955Z   if-no-files-found: warn
+2026-11-20T07:59:52.8750174Z   compression-level: 6
+2026-11-20T07:59:52.8750381Z   overwrite: false
+2026-11-20T07:59:52.8750614Z   include-hidden-files: false
+2026-11-20T07:59:52.8750825Z   archive: true
+2026-11-20T07:59:52.8751008Z env:
+2026-11-20T07:59:52.8751204Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:59:52.8751437Z   WIREIT_CACHE: github
+2026-11-20T07:59:52.8751633Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:59:52.8751925Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:59:52.8752363Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:59:52.8753037Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-20T07:59:52.8753544Z ##[endgroup]
+2026-11-20T07:59:52.9733592Z ##[warning]No files were found with the provided path: js/apps/admin-ui/playwright-report. No artifacts will be uploaded.
+2026-11-20T07:59:52.9863475Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-11-20T07:59:52.9863723Z with:
+2026-11-20T07:59:52.9863865Z   name: admin-ui-server-log-firefox
+2026-11-20T07:59:52.9864024Z   path: ~/server.log
+2026-11-20T07:59:52.9864156Z   retention-days: 7
+2026-11-20T07:59:52.9864291Z   if-no-files-found: warn
+2026-11-20T07:59:52.9864432Z   compression-level: 6
+2026-11-20T07:59:52.9864565Z   overwrite: false
+2026-11-20T07:59:52.9864692Z   include-hidden-files: false
+2026-11-20T07:59:52.9864838Z   archive: true
+2026-11-20T07:59:52.9864958Z env:
+2026-11-20T07:59:52.9865085Z   WORKSPACE: @keycloak/keycloak-admin-ui
+2026-11-20T07:59:52.9865251Z   WIREIT_CACHE: github
+2026-11-20T07:59:52.9865418Z   WIREIT_CACHE_GITHUB_CUSTODIAN_PORT: 62098
+2026-11-20T07:59:52.9865643Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:59:52.9865919Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.5-8/x64
+2026-11-20T07:59:52.9866434Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25 -Daether.connector.http.retryHandler.count=5 -Daether.connector.http.retryHandler.serviceUnavailable=429,502,503,504
+2026-11-20T07:59:52.9866853Z ##[endgroup]
+2026-11-20T07:59:53.0742406Z With the provided path, there will be 1 file uploaded
+2026-11-20T07:59:53.0744716Z Artifact name is valid!
+2026-11-20T07:59:53.0744916Z Root directory input is valid!
+2026-11-20T07:59:55.0906794Z Uploading artifact: admin-ui-server-log-firefox.zip
+2026-11-20T07:59:55.0928360Z Beginning upload of artifact content to blob storage
+2026-11-20T07:59:55.5378209Z Uploaded bytes 1762
+2026-11-20T07:59:55.6488984Z Finished uploading artifact content to blob storage!
+2026-11-20T07:59:55.6490233Z SHA256 digest of uploaded artifact is bc35ca872716abc34a6638977613b0aa61d578988711bfa7569d411a702be90d
+2026-11-20T07:59:55.6490675Z Finalizing artifact upload
+2026-11-20T07:59:56.0536342Z Artifact admin-ui-server-log-firefox successfully finalized. Artifact ID 14611977388
+2026-11-20T07:59:56.0537138Z Artifact admin-ui-server-log-firefox has been successfully uploaded! Final size is 1762 bytes. Artifact ID is 14611977388
+2026-11-20T07:59:56.0539419Z Artifact download URL: https://github.com/boba-benchmarks/keycloak/actions/runs/44697956683/artifacts/14611977388
+2026-11-20T07:59:56.0704129Z Post job cleanup.
+2026-11-20T07:59:56.0706693Z ##[start-action display=Setup Java;id=__795d5528-f737-4cdc-b555-b7a58501ae52.setup-java]
+2026-11-20T07:59:56.0756658Z Post job cleanup.
+2026-11-20T07:59:56.1278211Z ##[end-action id=__795d5528-f737-4cdc-b555-b7a58501ae52.setup-java;outcome=success;conclusion=success;duration_ms=57]
+2026-11-20T07:59:56.1306652Z Post job cleanup.
+2026-11-20T07:59:56.1309992Z ##[start-action display=Cache Kiota binary;id=__40c281c6-b7f9-4adf-8cf3-792c8016717f.__actions_cache_2]
+2026-11-20T07:59:56.1311301Z ##[end-action id=__40c281c6-b7f9-4adf-8cf3-792c8016717f.__actions_cache_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-20T07:59:56.1312379Z ##[start-action display=Cache PNPM store;id=__40c281c6-b7f9-4adf-8cf3-792c8016717f.__actions_cache]
+2026-11-20T07:59:56.1313489Z ##[end-action id=__40c281c6-b7f9-4adf-8cf3-792c8016717f.__actions_cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-20T07:59:56.1314537Z ##[start-action display=Cache Corepack tools;id=__40c281c6-b7f9-4adf-8cf3-792c8016717f.cache]
+2026-11-20T07:59:56.1315664Z ##[end-action id=__40c281c6-b7f9-4adf-8cf3-792c8016717f.cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-20T07:59:56.1316713Z ##[start-action display=Set up Node.js;id=__40c281c6-b7f9-4adf-8cf3-792c8016717f.__actions_setup-node]
+2026-11-20T07:59:56.1317799Z ##[end-action id=__40c281c6-b7f9-4adf-8cf3-792c8016717f.__actions_setup-node;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-20T07:59:56.1353077Z Post job cleanup.
+2026-11-20T07:59:56.1910565Z [command]/usr/bin/git version
+2026-11-20T07:59:56.1936336Z git version 2.56.1
+2026-11-20T07:59:56.1953555Z Temporarily overriding HOME='/home/runner/work/_temp/c4e945ba-7037-4d11-aeb6-340d415dc76e' before making global git config changes
+2026-11-20T07:59:56.1954046Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T07:59:56.1956670Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+2026-11-20T07:59:56.1976727Z Removing SSH command configuration
+2026-11-20T07:59:56.1979873Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T07:59:56.2002415Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T07:59:56.2223398Z Removing HTTP extra header
+2026-11-20T07:59:56.2226592Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T07:59:56.2248836Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T07:59:56.2437115Z Removing includeIf entries pointing to credentials config files
+2026-11-20T07:59:56.2441510Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-20T07:59:56.2457366Z includeif.gitdir:/home/runner/work/keycloak/keycloak/.git.path
+2026-11-20T07:59:56.2457690Z includeif.gitdir:/home/runner/work/keycloak/keycloak/.git/worktrees/*.path
+2026-11-20T07:59:56.2457959Z includeif.gitdir:/github/workspace/.git.path
+2026-11-20T07:59:56.2458214Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-20T07:59:56.2462390Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/keycloak/keycloak/.git.path
+2026-11-20T07:59:56.2477718Z /home/runner/work/_temp/git-credentials-314ae3de-3070-4bf1-8e03-29ec2f6d05de.config
+2026-11-20T07:59:56.2483438Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/keycloak/keycloak/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-314ae3de\-3070\-4bf1\-8e03\-29ec2f6d05de\.config
+2026-11-20T07:59:56.2506230Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/keycloak/keycloak/.git/worktrees/*.path
+2026-11-20T07:59:56.2521877Z /home/runner/work/_temp/git-credentials-314ae3de-3070-4bf1-8e03-29ec2f6d05de.config
+2026-11-20T07:59:56.2526233Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/keycloak/keycloak/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-314ae3de\-3070\-4bf1\-8e03\-29ec2f6d05de\.config
+2026-11-20T07:59:56.2552697Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-20T07:59:56.2568412Z /github/runner_temp/git-credentials-314ae3de-3070-4bf1-8e03-29ec2f6d05de.config
+2026-11-20T07:59:56.2573599Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-314ae3de\-3070\-4bf1\-8e03\-29ec2f6d05de\.config
+2026-11-20T07:59:56.2594100Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-20T07:59:56.2608612Z /github/runner_temp/git-credentials-314ae3de-3070-4bf1-8e03-29ec2f6d05de.config
+2026-11-20T07:59:56.2613033Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-314ae3de\-3070\-4bf1\-8e03\-29ec2f6d05de\.config
+2026-11-20T07:59:56.2634169Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-20T07:59:56.2828977Z Removing credentials config '/home/runner/work/_temp/git-credentials-314ae3de-3070-4bf1-8e03-29ec2f6d05de.config'
+2026-11-20T07:59:56.2950792Z Cleaning up orphan processes
+2026-11-20T07:59:56.3213829Z Terminate orphan process: pid (2116) (MainThread)
+2026-11-20T07:59:56.3229562Z Terminate orphan process: pid (2296) (java)

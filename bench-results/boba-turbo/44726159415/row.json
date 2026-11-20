@@ -1,0 +1,71 @@
+{
+ "at": "2026-11-20T11:26:53+00:00",
+ "suite": "keycloak",
+ "repo": "boba-benchmarks/keycloak",
+ "runner": "boba-turbo",
+ "shards": "1",
+ "note": "warm",
+ "run": "https://github.com/boba-benchmarks/keycloak/actions/runs/44726159415",
+ "run_id": 44726159415,
+ "sha": "bf6e41d7a0c8859ebe42ccdc422463a1803c5a4a",
+ "conclusion": "failure",
+ "wall_s": 383,
+ "queue_s": 9,
+ "job_s": 581,
+ "jobs": 3,
+ "job_max_s": 224,
+ "vcpu_min": 136.6,
+ "billed_min": null,
+ "usd": 0.205,
+ "tests": {
+  "passed": 988,
+  "failed": 0,
+  "flaky": 1,
+  "skipped": 8,
+  "checks": 2,
+  "conclusions": [
+   "failure",
+   "success"
+  ],
+  "failed_titles": []
+ },
+ "boba_jobs": [
+  {
+   "boba_job_id": "bj_4a2aed31e253a56c",
+   "tier": "turbo",
+   "warm": true,
+   "outcome": "done",
+   "forks": 13,
+   "start_plan_forks": 15,
+   "start_plan_reason": "time_earned",
+   "start_plan_granted": 4,
+   "start_plan_error": null,
+   "vcpu_minutes": 48.17,
+   "billed_vcpu_minutes": null,
+   "billing_status": "skipped",
+   "duration_ms": 209544,
+   "hosts": 3,
+   "split_declined_reason": null,
+   "tests_ms": 84692
+  },
+  {
+   "boba_job_id": "bj_a933b6ca59cbd9e5",
+   "tier": "turbo",
+   "warm": true,
+   "outcome": "done",
+   "forks": 16,
+   "start_plan_forks": 16,
+   "start_plan_reason": "time_earned",
+   "start_plan_granted": 4,
+   "start_plan_error": null,
+   "vcpu_minutes": 88.43,
+   "billed_vcpu_minutes": 88.43,
+   "billing_status": "pending",
+   "duration_ms": 224569,
+   "hosts": 3,
+   "split_declined_reason": null,
+   "tests_ms": 112265
+  }
+ ],
+ "price_basis": "billed, used (skipped)"
+}

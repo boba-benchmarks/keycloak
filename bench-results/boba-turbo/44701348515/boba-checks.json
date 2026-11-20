@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Boba / Admin UI E2E firefox (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136174170406",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T08:22:19Z",
+  "completed_at": "2026-11-20T08:26:26Z",
+  "title": "493 passed, 1 flaky",
+  "summary": "### \u2705 All 493 tests passed in 4 min 7 s\n\nOn bf6e41d \u00b7 6 min 1 s into the job \u00b7 5 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_3755cbaa1efdf29e/a596763e11d032c718fa56a37aef47ee/html/index.html)\n\n<details>\n<summary>1 flaky test, not blocking</summary>\n\n`should add SAML mapper of type Hardcoded User Session Attribute` failed once here, then passed on retry\n\n</details>\n\n\u26a0\ufe0f Playwright exited with an error after the tests, so the check fails",
+  "text": null
+ },
+ {
+  "name": "Boba / Admin UI E2E chromium (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136173346755",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:22:10Z",
+  "completed_at": "2026-11-20T08:24:32Z",
+  "title": "495 passed",
+  "summary": "### \u2705 All 495 tests passed in 2 min 21 s\n\nOn bf6e41d \u00b7 4 min 8 s into the job \u00b7 3 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_933501e82d8fd2cf/e0009efe2efdd23d6d30dcefc384a214/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136171503553",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T08:20:23Z",
+  "completed_at": "2026-11-20T08:26:43Z",
+  "title": "1 of 3 Boba jobs failed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| [Admin UI E2E chromium (boba-turbo)](https://github.com/boba-benchmarks/keycloak/runs/136173346755) | Passed | 495 passed |\n| [Admin UI E2E firefox (boba-turbo)](https://github.com/boba-benchmarks/keycloak/runs/136174170406) | **Failed** | 493 passed, 1 flaky |\n| Build Keycloak (boba-turbo) | Passed | The job ended (success) |",
+  "text": null
+ }
+]

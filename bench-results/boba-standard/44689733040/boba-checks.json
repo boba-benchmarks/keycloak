@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Boba / Admin UI E2E firefox (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136136088301",
+  "conclusion": "success",
+  "started_at": "2026-11-20T06:49:19Z",
+  "completed_at": "2026-11-20T06:52:24Z",
+  "title": "493 passed",
+  "summary": "### \u2705 All 493 tests passed in 3 min 5 s\n\nOn bf6e41d \u00b7 5 min 19 s into the job \u00b7 5 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_aa6c10de953479f3/0895dcbe9b1d81afae66a980b62677c0/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / Admin UI E2E chromium (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136135518407",
+  "conclusion": "success",
+  "started_at": "2026-11-20T06:49:07Z",
+  "completed_at": "2026-11-20T06:50:52Z",
+  "title": "495 passed",
+  "summary": "### \u2705 All 495 tests passed in 1 min 45 s\n\nOn bf6e41d \u00b7 3 min 49 s into the job \u00b7 3 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_2c025d97fd436b4e/ae94a5bb1288f50dff329d2b17616f67/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136134046579",
+  "conclusion": "success",
+  "started_at": "2026-11-20T06:47:05Z",
+  "completed_at": "2026-11-20T06:52:41Z",
+  "title": "All 3 Boba jobs passed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| [Admin UI E2E chromium (boba-standard)](https://github.com/boba-benchmarks/keycloak/runs/136135518407) | Passed | 495 passed |\n| [Admin UI E2E firefox (boba-standard)](https://github.com/boba-benchmarks/keycloak/runs/136136088301) | Passed | 493 passed |\n| Build Keycloak (boba-standard) | Passed | The job ended (success) |",
+  "text": null
+ }
+]

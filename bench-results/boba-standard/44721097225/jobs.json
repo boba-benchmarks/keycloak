@@ -1,0 +1,445 @@
+[
+ {
+  "id": 136236737223,
+  "name": "Build Keycloak (boba-standard)",
+  "html_url": "https://github.com/boba-benchmarks/keycloak/actions/runs/44721097225/job/136236737223",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-20T10:39:36Z",
+  "started_at": "2026-11-20T10:39:45Z",
+  "completed_at": "2026-11-20T10:42:25Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-136236737223-1",
+  "runner_group_name": "coldtea boba - keycloak",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-20T10:39:46Z",
+    "completed_at": "2026-11-20T10:39:46Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-20T10:39:46Z",
+    "completed_at": "2026-11-20T10:39:46Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-20T10:39:46Z",
+    "completed_at": "2026-11-20T10:39:49Z"
+   },
+   {
+    "name": "Build Keycloak",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-20T10:39:49Z",
+    "completed_at": "2026-11-20T10:42:15Z"
+   },
+   {
+    "name": "Prepare archive for upload",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-20T10:42:15Z",
+    "completed_at": "2026-11-20T10:42:15Z"
+   },
+   {
+    "name": "Upload Keycloak dist",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-20T10:42:15Z",
+    "completed_at": "2026-11-20T10:42:21Z"
+   },
+   {
+    "name": "Post Build Keycloak",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-20T10:42:21Z",
+    "completed_at": "2026-11-20T10:42:21Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-20T10:42:21Z",
+    "completed_at": "2026-11-20T10:42:21Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 13,
+    "started_at": "2026-11-20T10:42:21Z",
+    "completed_at": "2026-11-20T10:42:21Z"
+   }
+  ]
+ },
+ {
+  "id": 136238064318,
+  "name": "Admin UI E2E chromium (boba-standard)",
+  "html_url": "https://github.com/boba-benchmarks/keycloak/actions/runs/44721097225/job/136238064318",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-20T10:42:25Z",
+  "started_at": "2026-11-20T10:42:35Z",
+  "completed_at": "2026-11-20T10:46:31Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-136238073725-1",
+  "runner_group_name": "coldtea boba - keycloak",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-20T10:42:36Z",
+    "completed_at": "2026-11-20T10:42:37Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-20T10:42:37Z",
+    "completed_at": "2026-11-20T10:42:37Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-20T10:42:37Z",
+    "completed_at": "2026-11-20T10:42:39Z"
+   },
+   {
+    "name": "Run ./.github/actions/pnpm-setup",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-20T10:42:39Z",
+    "completed_at": "2026-11-20T10:42:45Z"
+   },
+   {
+    "name": "Download Keycloak server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-20T10:42:45Z",
+    "completed_at": "2026-11-20T10:43:43Z"
+   },
+   {
+    "name": "Setup Java",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-20T10:43:43Z",
+    "completed_at": "2026-11-20T10:43:44Z"
+   },
+   {
+    "name": "Start Keycloak server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-20T10:43:44Z",
+    "completed_at": "2026-11-20T10:43:45Z"
+   },
+   {
+    "name": "Run ./.github/actions/playwright-setup",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-20T10:43:45Z",
+    "completed_at": "2026-11-20T10:44:10Z"
+   },
+   {
+    "name": "Wait for Keycloak server to start",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-20T10:44:10Z",
+    "completed_at": "2026-11-20T10:44:10Z"
+   },
+   {
+    "name": "Build the admin client",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-20T10:44:10Z",
+    "completed_at": "2026-11-20T10:44:17Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-20T10:44:17Z",
+    "completed_at": "2026-11-20T10:46:25Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-20T10:46:25Z",
+    "completed_at": "2026-11-20T10:46:25Z"
+   },
+   {
+    "name": "Summarize Playwright results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 13,
+    "started_at": "2026-11-20T10:46:25Z",
+    "completed_at": "2026-11-20T10:46:25Z"
+   },
+   {
+    "name": "Upload Playwright results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 14,
+    "started_at": "2026-11-20T10:46:25Z",
+    "completed_at": "2026-11-20T10:46:25Z"
+   },
+   {
+    "name": "Upload Playwright report",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 15,
+    "started_at": "2026-11-20T10:46:25Z",
+    "completed_at": "2026-11-20T10:46:25Z"
+   },
+   {
+    "name": "Upload server logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 16,
+    "started_at": "2026-11-20T10:46:25Z",
+    "completed_at": "2026-11-20T10:46:25Z"
+   },
+   {
+    "name": "Post Setup Java",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 30,
+    "started_at": "2026-11-20T10:46:25Z",
+    "completed_at": "2026-11-20T10:46:25Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/pnpm-setup",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 31,
+    "started_at": "2026-11-20T10:46:25Z",
+    "completed_at": "2026-11-20T10:46:26Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 32,
+    "started_at": "2026-11-20T10:46:26Z",
+    "completed_at": "2026-11-20T10:46:26Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 33,
+    "started_at": "2026-11-20T10:46:26Z",
+    "completed_at": "2026-11-20T10:46:26Z"
+   }
+  ]
+ },
+ {
+  "id": 136238073725,
+  "name": "Admin UI E2E firefox (boba-standard)",
+  "html_url": "https://github.com/boba-benchmarks/keycloak/actions/runs/44721097225/job/136238073725",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-20T10:42:26Z",
+  "started_at": "2026-11-20T10:42:35Z",
+  "completed_at": "2026-11-20T10:47:42Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-136238064318-1",
+  "runner_group_name": "coldtea boba - keycloak",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-20T10:42:36Z",
+    "completed_at": "2026-11-20T10:42:38Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-20T10:42:38Z",
+    "completed_at": "2026-11-20T10:42:38Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-20T10:42:38Z",
+    "completed_at": "2026-11-20T10:42:40Z"
+   },
+   {
+    "name": "Run ./.github/actions/pnpm-setup",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-20T10:42:40Z",
+    "completed_at": "2026-11-20T10:42:46Z"
+   },
+   {
+    "name": "Download Keycloak server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-20T10:42:46Z",
+    "completed_at": "2026-11-20T10:43:45Z"
+   },
+   {
+    "name": "Setup Java",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-20T10:43:45Z",
+    "completed_at": "2026-11-20T10:43:46Z"
+   },
+   {
+    "name": "Start Keycloak server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-20T10:43:46Z",
+    "completed_at": "2026-11-20T10:43:47Z"
+   },
+   {
+    "name": "Run ./.github/actions/playwright-setup",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-20T10:43:47Z",
+    "completed_at": "2026-11-20T10:43:51Z"
+   },
+   {
+    "name": "Wait for Keycloak server to start",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-20T10:43:51Z",
+    "completed_at": "2026-11-20T10:44:01Z"
+   },
+   {
+    "name": "Build the admin client",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-20T10:44:01Z",
+    "completed_at": "2026-11-20T10:44:05Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-20T10:44:05Z",
+    "completed_at": "2026-11-20T10:47:37Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-20T10:47:37Z",
+    "completed_at": "2026-11-20T10:47:37Z"
+   },
+   {
+    "name": "Summarize Playwright results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 13,
+    "started_at": "2026-11-20T10:47:37Z",
+    "completed_at": "2026-11-20T10:47:37Z"
+   },
+   {
+    "name": "Upload Playwright results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 14,
+    "started_at": "2026-11-20T10:47:37Z",
+    "completed_at": "2026-11-20T10:47:37Z"
+   },
+   {
+    "name": "Upload Playwright report",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 15,
+    "started_at": "2026-11-20T10:47:37Z",
+    "completed_at": "2026-11-20T10:47:37Z"
+   },
+   {
+    "name": "Upload server logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 16,
+    "started_at": "2026-11-20T10:47:37Z",
+    "completed_at": "2026-11-20T10:47:37Z"
+   },
+   {
+    "name": "Post Setup Java",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 30,
+    "started_at": "2026-11-20T10:47:37Z",
+    "completed_at": "2026-11-20T10:47:37Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/pnpm-setup",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 31,
+    "started_at": "2026-11-20T10:47:37Z",
+    "completed_at": "2026-11-20T10:47:37Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 32,
+    "started_at": "2026-11-20T10:47:37Z",
+    "completed_at": "2026-11-20T10:47:37Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 33,
+    "started_at": "2026-11-20T10:47:37Z",
+    "completed_at": "2026-11-20T10:47:37Z"
+   }
+  ]
+ }
+]

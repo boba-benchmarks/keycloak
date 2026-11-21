@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Boba / Admin UI E2E firefox (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136660254989",
+  "conclusion": "failure",
+  "started_at": "2026-11-21T00:28:47Z",
+  "completed_at": "2026-11-21T00:31:00Z",
+  "title": "493 passed, 1 flaky",
+  "summary": "### \u2705 All 493 tests passed in 2 min 12 s\n\nOn bf6e41d \u00b7 4 min 7 s into the job \u00b7 5 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_abc454cecfce1078/f0fca5eb28a58d27adedef0c49a515c6/html/index.html)\n\n<details>\n<summary>1 flaky test, not blocking</summary>\n\n`should update client role description` failed once here, then passed on retry\n\n</details>\n\n\u26a0\ufe0f Playwright exited with an error after the tests, so the check fails",
+  "text": null
+ },
+ {
+  "name": "Boba / Admin UI E2E chromium (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136659921548",
+  "conclusion": "success",
+  "started_at": "2026-11-21T00:28:31Z",
+  "completed_at": "2026-11-21T00:30:06Z",
+  "title": "495 passed",
+  "summary": "### \u2705 All 495 tests passed in 1 min 35 s\n\nOn bf6e41d \u00b7 3 min 11 s into the job \u00b7 3 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_1bf2340b3627e596/57124d0de7f366068e820162aaa55c9b/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136658713711",
+  "conclusion": "failure",
+  "started_at": "2026-11-21T00:26:55Z",
+  "completed_at": "2026-11-21T00:31:08Z",
+  "title": "1 of 3 Boba jobs failed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| [Admin UI E2E chromium (boba-turbo)](https://github.com/boba-benchmarks/keycloak/runs/136659921548) | Passed | 495 passed |\n| [Admin UI E2E firefox (boba-turbo)](https://github.com/boba-benchmarks/keycloak/runs/136660254989) | **Failed** | 493 passed, 1 flaky |\n| Build Keycloak (boba-turbo) | Passed | The job ended (success) |",
+  "text": null
+ }
+]

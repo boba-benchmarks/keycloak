@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Boba / Admin UI E2E firefox (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136704186017",
+  "conclusion": "success",
+  "started_at": "2026-11-21T02:45:09Z",
+  "completed_at": "2026-11-21T02:48:29Z",
+  "title": "493 passed",
+  "summary": "### \u2705 All 493 tests passed in 3 min 20 s\n\nOn bf6e41d \u00b7 4 min 50 s into the job \u00b7 5 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_7a8699b4cb2bda1f/f455bf103e139ebe35b0786cb2d13dae/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Admin UI E2E chromium (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136703789585",
+  "conclusion": "failure",
+  "started_at": "2026-11-21T02:45:02Z",
+  "completed_at": "2026-11-21T02:47:02Z",
+  "title": "495 passed, 2 flaky",
+  "summary": "### \u2705 All 495 tests passed in 2 min 1 s\n\nOn bf6e41d \u00b7 3 min 23 s into the job \u00b7 3 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_0f8306f049193204/59830c3952b1c89366a725ace3ca0834/html/index.html)\n\n<details>\n<summary>2 flaky tests, not blocking</summary>\n\n`should disable preview if json very long` failed once here, then passed on retry\n`should update client role description` failed once here, then passed on retry\n\n</details>\n\n\u26a0\ufe0f Playwright exited with an error after the tests, so the check fails",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/keycloak/runs/136702842192",
+  "conclusion": "failure",
+  "started_at": "2026-11-21T02:43:41Z",
+  "completed_at": "2026-11-21T02:48:45Z",
+  "title": "1 of 3 Boba jobs failed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| [Admin UI E2E chromium (boba-standard)](https://github.com/boba-benchmarks/keycloak/runs/136703789585) | **Failed** | 495 passed, 2 flaky |\n| [Admin UI E2E firefox (boba-standard)](https://github.com/boba-benchmarks/keycloak/runs/136704186017) | Passed | 493 passed |\n| Build Keycloak (boba-standard) | Passed | The job ended (success) |",
+  "text": null
+ }
+]
